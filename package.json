@@ -1,0 +1,28 @@
+{
+  "name": "webserverpap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoCabral123/PAP-REPO.git"
+  },
+  "author": "Bernardo Cabral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BernardoCabral123/PAP-REPO/issues"
+  },
+  "homepage": "https://github.com/BernardoCabral123/PAP-REPO#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "mysql2": "^2.3.3"
+  }
+}
