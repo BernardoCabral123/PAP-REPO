@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.img img{
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#circulo {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 25px;
+}

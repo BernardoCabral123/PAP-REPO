@@ -1,0 +1,41 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: white;
+    color: #434343;
+}
+
+.background{
+    position: absolute;
+}
+
+.container{
+    background: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.registo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img img{
+    width: 350px;
+    height: 450px;
+}
+
+@media (max-width:700px) {
+    img#conta {
+      display: none;
+    }
+  }

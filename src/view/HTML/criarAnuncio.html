@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+        <!-- botstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Animate css -->
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- letras -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Criar Anuncios</title>
+    </head>
+    <body>
+        <nav>
+            <!--Nav bar-->
+            <div id="nav">
+            </div>
+            <script>
+            $(function(){
+            $("#nav").load("nav.html");
+            });
+            </script>
+            <!--Nav bar--> 
+        </nav>
+
+        <div class="container mt-5">
+            <div class="registo shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="row">
+                    <div class="img col-sm-6 mt-3">
+                        <img class="img-fluid" src="/Assets/work.svg" alt="work">
+                    </div>
+
+                    <div class="formulario col-sm-6">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-12 mt-1">
+                                    <label for="curso" class="form-label">Curso</label>
+                                    <input type="text" class="form-control" id="curso" style="border-radius: 15px;">
+                                </div>
+            
+                                <div class="col-sm-12 mt-1">
+                                    <label for="area" class="form-label">Area de intervenção</label>
+                                    <input type="text" class="form-control" id="area" aria-describedby="area" style="border-radius: 15px;">
+                                </div>
+
+                                <div class="col-sm-12 mt-1">
+                                    <label for="descricao" class="form-label">Descrição do trabalho dos formandos</label>
+                                    <textarea class="form-control" id="descricao" style="border-radius: 15px;" rows="3"></textarea>
+                                </div>
+                    
+                                <div class="col-sm-12 mt-1">
+                                    <label for="vagas" class="form-label">Numero de vagas</label>
+                                    <input type="text" class="form-control" id="vagas" style="border-radius: 15px;">
+                                </div>
+                    
+                                <div class="col-sm-6 mt-1">
+                                    <label for="ilha" class="form-label">Ilha</label>
+                                    <input type="text" class="form-control" id="ilha" style="border-radius: 15px;">
+                                </div>
+                    
+                                <div class="col-sm-6 mt-1">
+                                    <label for="conselho" class="form-label">Conselho</label>
+                                    <input type="text" class="form-control" id="conselho" style="border-radius: 15px;">
+                                </div>
+                                
+                                <div class="informacao mt-4">
+                                    <center><p>Pretende escolher presonalizamente os estagiários<br>
+                                        (Não pode ser alterado posteramente)<br>
+                                    </p></center>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-4"></div>
+                                    
+                                    <div class="col-sm-2">
+                                        <div class= "form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" style="border-radius: 15px;">
+                                            <label class="form-check-label" for="exampleCheck1">Sim</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-2">
+                                        <div class= "form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" style="border-radius: 15px;">
+                                            <label class="form-check-label" for="exampleCheck1">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <center><div class="row mt-2">
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Criar anuncio</button>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Cancelar</button>
+                                    </div>
+                                </div></center>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    display: flex;
+    align-items: center !important;
+}
+
+.conteudo{
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+.img img{
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#circulo {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 25px;
+}
+
+@media (max-width: 720px) {
+    .card{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
