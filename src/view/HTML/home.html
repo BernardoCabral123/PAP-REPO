@@ -16,21 +16,11 @@
     <!-- letras -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://localhost:3000/files/styles/style.css">
+    <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>HOME</title>
 </head>
-    <nav>
-        <!--Nav bar-->
-        <div id="nav">
-        </div>
-        <script>
-        $(function(){
-        $("#nav").load("nav.html");
-        });
-        </script>
-        <!--Nav bar--> 
-    </nav>
-    <body>
+    <body onload="renderNavFoot();">
 
         <nav class="mobile-nav">
             <a href="/HTML/home.html" class="bloc-icon">
