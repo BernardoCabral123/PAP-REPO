@@ -1,5 +1,4 @@
 function renderNav(){
-    console.log("ola")
     fetch("http://localhost:3000/api/content/navbar")
     .then(res => res.text())
     .then(data => renderCode("navbar",data))
@@ -18,7 +17,6 @@ function renderFooter(){
     });
 }
 function renderCode(id,codigo){
-    console.log(codigo)
     document.getElementById(id).innerHTML = codigo;
 }
 
