@@ -21,6 +21,6 @@ function renderCode(id,codigo){
 }
 
 function renderNavFoot(){
-    renderFooter();
     renderNav();
+    renderFooter();
 }

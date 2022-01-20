@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/files/styles/style.css">
+    <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
     <!-- botstrap -->
@@ -15,28 +17,44 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- letras -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://localhost:3000/files/styles/style.css">
-    <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>HOME</title>
 </head>
     <body onload="renderNavFoot();">
+        <div id="navbar"></div>
 
-        <nav class="mobile-nav">
-            <a href="/HTML/home.html" class="bloc-icon">
-                <i class="fas fa-home"></i>
-            </a>
+        <div class="container-fluid" style="margin-top: 14px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="height: 500px;">
+                  <div class="carousel-item active">
+                    <img src="http://localhost:3000/files/Assets/reuniao.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="http://localhost:3000/files/Assets/lab.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="http://localhost:3000/files/Assets/servidores.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        
 
-            <a href="/HTML/estagios.html" class="bloc-icon">
-                <i class="fas fa-briefcase"></i>
-            </a>
-
-            <a href="/HTML/login.html" class="bloc-icon">
-                <i class="fas fa-user"></i>
-            </a>
-        </nav>
-
-        <!-- top -->
+        <!-- top 
         <div class="container-fluid" id="principal">
             <div class="parte1">
                 <div class="img-1"><img class="img-fluid" src="http://localhost:3000/files/Assets/pessoa.svg" alt=""></div>
@@ -49,12 +67,14 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- questoes -->
         <div class="container" id="questoes">
-            <center><div class="img-3">
-                <img src="/Assets/questoes.png" alt="">
-                <span>Porque utilizar nossa plataforma?</span>
-            </div></center>
+            <center>
+            <div class="img-3">
+                <span>o que é formação em contexto de traballho?</span>
+            </div>
+            </center>
         </div>
         <!-- cartoes -->
         <section class="cards">
@@ -108,16 +128,7 @@
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </section>
         </section>
+
+        <div id="footer"></div>
     </body>
-        <footer>
-            <!--Nav bar-->
-            <div id="footer-placeholder1">
-            </div>
-            <script>
-            $(function(){
-            $("#footer-placeholder1").load("footer.html");
-            });
-            </script>
-            <!--Nav bar--> 
-        </footer>
 </html>

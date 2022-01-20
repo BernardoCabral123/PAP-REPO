@@ -35,4 +35,16 @@ router.get("/profile.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/profile.svg"));
 })
 
+router.get("/lab.jpg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/lab.jpg"));
+})
+
+router.get("/reuniao.jpg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/reuniao.jpg"));
+})
+
+router.get("/servidores.jpg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/servidores.jpg"));
+})
+
 module.exports = router;
