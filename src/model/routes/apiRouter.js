@@ -1,13 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const alunoRouter = require("./apiRoutes/alunoRouter");
-router.use("/alunos",alunoRouter);
+router.use("/alunos",require("./apiRoutes/alunoRouter"));
 
-const turmaRouter = require("./apiRoutes/turmaRouter");
-router.use("/turmas",turmaRouter);
+router.use("/turmas",require("./apiRoutes/turmaRouter"));
 
-const cursoRouter = require("./apiRoutes/cursoRouter");
-router.use("/cursos",cursoRouter);
+router.use("/cursos",require("./apiRoutes/cursoRouter"));
+
+router.use("/content",require("./apiRoutes/contentRouter"));
 
 module.exports = router;
