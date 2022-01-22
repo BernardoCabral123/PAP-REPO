@@ -56,6 +56,12 @@ body {
     height: auto;
 }
 
+#imgPerfil{
+    width: 270px;
+    height: 260px;
+    border-radius: 265px;
+}
+
 section.cards {
     display: flex;
     justify-content: center;

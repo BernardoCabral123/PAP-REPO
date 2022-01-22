@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meu -->
         <link rel="stylesheet" href="http://localhost:3000/files/styles/style.css">
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
         <!-- Font Awesome -->
@@ -19,7 +20,53 @@
         <title>HOME</title>
     </head>
     <body onload="renderNavFoot();">
-    <div id="navbar"></div>
+        <div id="navbar"></div>
+        
+        <div class="container mt-2">
+            <div id="imgPerfil" class="shadow-lg p-1 mt-2 mx-auto d-block border">
+                <img src="http://localhost:3000/files/Assets/profile.svg" class="img-thumbnail rounded rounded-circle mx-auto d-block border border-light" alt="..." style="height: 250px;">
+            </div>
+
+            <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="row">
+                    <div class="conteudo col-sm-12 mt-4">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>Nome</h5>
+                                <p>Diogo Branco</p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <h5>Curso</h5>
+                                <p>Tecnico de informatica - Sistemas</p>                            
+                            </div>
+
+                            <div class="col-sm-4">
+                                <h5>Turmas</h5>
+                                <p>T1</p>                            
+                            </div>
+
+                            <div class="col-sm-4">
+                                <h5>Data de curso</h5>
+                                <p>2019-2022</p>                            
+                            </div>
+
+                            <div class="col-sm-4">
+                                <h5>Data de nascimento</h5>
+                                <p>10/12/2002</p>                            
+                            </div>
+
+                            <div class="col-sm-4">
+                                <h5>Morada</h5>
+                                <p>São pedro, Ponta Delgada, São Miguel</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="footer"></div>
     </body>
 </html>
