@@ -4,8 +4,9 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Meu -->
       <link rel="stylesheet" href="http://localhost:3000/files/styles/gerirRecursos.css">
-      <script type="text/javascript" src="/JS/script.js"></script>
+      <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
       <!-- Font Awesome -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
       <!-- botstrap -->
@@ -20,18 +21,8 @@
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <title>Document</title>
   </head>
-  <body onload="div();">
-    <nav>
-      <!--Nav bar-->
-      <div id="nav">
-      </div>
-      <script>
-      $(function(){
-      $("#nav").load("nav.html");
-      });
-      </script>
-      <!--Nav bar--> 
-    </nav>
+  <body onload="renderNavFoot(); div();">
+    <div id="navbar"></div>
 
     <!--Criar Aluno
     <div class="container">
@@ -84,8 +75,10 @@
 
     <div class="container">
       <div id="categoria">
-
+        
       </div>
     </div>
+
+    <div id="footer"></div>
   </body>
 </html>

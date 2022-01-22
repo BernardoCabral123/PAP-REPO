@@ -51,7 +51,7 @@ router.get("/minha-area/criar-anuncio",(req,res)=>{
 
 //ADMIN e DIRETOR
 router.get("/gerir-recursos",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/view/HTML/gerir-recursos.html"));
+    res.sendFile(path.join(srcLocation,"/view/HTML/gerirRecursos.html"));
 })
 
 
