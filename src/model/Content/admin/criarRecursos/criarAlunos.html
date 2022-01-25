@@ -32,7 +32,27 @@
 
                         <div class="col-6">
                             <form>
-                                <div class="row">
+                                <div class="row mt-4">
+                                    <div class="col-sm-12 mt-1">
+                                        <label for="turma" class="form-label">Curso</label>
+                                        <select id="curso" class="form-select col-sm-12" aria-label="Default select example" style="border-radius: 15px;">
+                                            <option value="" selected>Escolha o curso</option>
+                                            <option value="sistemas">Técnico de informatica - Sistemas</option>
+                                            <option value="redes">Técnico de informatica - Redes</option>
+                                            <option value="multimedia">Técnico de informatica - Multimedia</option>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="col-sm-12 mt-1">
+                                        <label for="turma" class="form-label">Turma</label>
+                                        <select id="curso" class="form-select col-sm-12" aria-label="Default select example" style="border-radius: 15px;">
+                                            <option value="" selected>Escolha o curso</option>
+                                            <option value="sistemas">Técnico de informatica - Sistemas</option>
+                                            <option value="redes">Técnico de informatica - Redes</option>
+                                            <option value="multimedia">Técnico de informatica - Multimedia</option>
+                                        </select>
+                                    </div>
+
                                     <div class="col-sm-12 mt-1">
                                         <label for="pNome" class="form-label">Primeiro nome</label>
                                         <input type="text" class="form-control" id="pNome" style="border-radius: 15px;">
@@ -44,26 +64,11 @@
                                     </div>
                             
                                     <div class="col-sm-12 mt-1">
-                                        <label for="turma" class="form-label">Turma</label>
-                                        <input type="text" class="form-control" id="turma" style="border-radius: 15px;">
-                                    </div>
-                            
-                                    <div class="col-sm-12 mt-1">
-                                        <label for="turma" class="form-label">Curso</label>
-                                        <select id="estado" class="form-select col-sm-6 mx-3" onchange="div(this)" aria-label="Default select example">
-                                            <option value="" selected>Escolha o curso</option>
-                                            <option value="Sistemas">Técnico de informatica - Sistemas</option>
-                                            <option value="Redes">Técnico de informatica - Redes</option>
-                                            <option value="Multimedia">Técnico de informatica - Multimedia</option>
-                                        </select>
-                                    </div>
-                            
-                                    <div class="col-sm-12 mt-1">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="text" class="form-control" id="email" style="border-radius: 15px;">
                                     </div>
 
-                                    <div class="col mt-5">
+                                    <div class="col mt-4">
                                         <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Adicionar aluno</button></center>
                                     </div>
                                 </div>

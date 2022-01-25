@@ -11,6 +11,10 @@ router.get("/pessoa.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/pessoa.svg"));
 })
 
+router.get("/diretorTurma.svg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/diretorTurma.svg"));
+})
+
 router.get("/edificio.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/edificio.png"));
 })
