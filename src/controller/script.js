@@ -257,62 +257,61 @@ function div(select){
 
   const tabelaFormadores = document.getElementById('categoria').innerHTML = 
     `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-      <table>
-        <thead>
-          <tr class="align-middle">
-            <th scope="col">Primeiro Nome</th>
-            <th scope="col">Ultimo Nome</th>
-            <th scope="col">Area</th>
-            <th scope="col">Email</th>
-            <th scope="col">Numero telemovel</th>
-            <th scope="col">Perfil</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>Programação</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td>910214987</div></td>
-            <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
-          </tr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Primeiro Nome</th>
+              <th scope="col">Ultimo Nome</th>
+              <th scope="col">Area</th>
+              <th scope="col">Email</th>
+              <th scope="col">Numero telemovel</th>
+              <th scope="col">Perfil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>Programação</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td>910214987</div></td>
+              <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
+            </tr>
 
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>Programação</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td>910214987</div></td>
-            <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
-          </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>Programação</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td>910214987</div></td>
+              <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
+            </tr>
 
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>Programação</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td>910214987</div></td>
-            <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
-          </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>Programação</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td>910214987</div></td>
+              <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
+            </tr>
 
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>Programação</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td>910214987</div></td>
-            <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>`
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>Programação</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td>910214987</div></td>
+              <td><button type="submit" class="btn btn-primary">Ver mais</button></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>`
 
   //////////////////////////////////////////////////////////////////////////
 
   const tabelaTurmas = document.getElementById('categoria').innerHTML = 
-    `<div class="container">
-      <div id="categoria"><div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+    `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
       <table class="table">
         <thead>
           <tr>
