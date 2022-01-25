@@ -4,7 +4,7 @@ function renderNav(){
     .then(data => renderCode("navbar",data))
     .catch((err)=>{
         console.log(err);
-        alert("Ocorreu a carregar a nav");
+        alert("Ocorreu um erro a carregar a navbar");
     });
 }
 function renderFooter(){
@@ -13,7 +13,7 @@ function renderFooter(){
     .then(data => renderCode("footer",data))
     .catch((err)=>{
         console.log(err);
-        alert("Ocorreu a carregar o footer");
+        alert("Ocorreu um erro a carregar o footer");
     });
 }
 function renderCode(id,codigo){
