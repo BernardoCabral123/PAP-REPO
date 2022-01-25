@@ -27,6 +27,10 @@ router.get("/criarEmpre.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/criarEmpre.svg"));
 })
 
+router.get("/criarAluno.svg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/criarAluno.svg"));
+})
+
 router.get("/dados.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/dados.png"));
 })
