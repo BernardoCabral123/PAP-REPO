@@ -4,6 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 
+
 router.get("/navbar",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/model/content/navsFooter/nav.html"));
 })
@@ -11,6 +12,9 @@ router.get("/navbar",(req,res)=>{
 router.get("/footer",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/model/content/navsFooter/footer.html"));
 })
+
+
+router.use("/admin", require("./contentRoutes/adminContentRouter"));
 
 router.get("/admin/criarAdmins",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/model/content/admin/criarAdmins.html"));
