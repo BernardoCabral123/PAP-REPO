@@ -257,7 +257,7 @@ function div(select){
 
   const tabelaFormadores = document.getElementById('categoria').innerHTML = 
     `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-      <table class="table">
+      <table class="table align-middle">
         <thead>
           <tr>
             <th scope="col">Primeiro Nome</th>
@@ -326,7 +326,7 @@ function div(select){
         </thead>
         <tbody>
           <tr>
-            <td><div id="circulo"></div></td>
+            <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
             <td>TIS T1</td>
             <td>Tecnico de informatica sistemas-</td>
             <td>Mark</td>
@@ -335,7 +335,7 @@ function div(select){
           </tr>
 
           <tr>
-            <td><div id="circulo"></div></td>
+            <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
             <td>TIS T1</td>
             <td>Tecnico de informatica sistemas-</td>
             <td>Mark</td>
@@ -344,7 +344,7 @@ function div(select){
           </tr>
 
           <tr>
-            <td><div id="circulo"></div></td>
+            <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
             <td>TIS T1</td>
             <td>Tecnico de informatica - sistemas</td>
             <td>Mark</td>
@@ -353,7 +353,7 @@ function div(select){
           </tr>
 
           <tr>
-            <td><div id="circulo"></div></td>
+            <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
             <td>TIS T1</td>
             <td>Tecnico de informatica - sistemas</td>
             <td>Mark</td>
