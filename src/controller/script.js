@@ -257,9 +257,9 @@ function div(select){
 
   const tabelaFormadores = document.getElementById('categoria').innerHTML = 
     `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-      <table class="table align-middle">
+      <table>
         <thead>
-          <tr>
+          <tr class="align-middle">
             <th scope="col">Primeiro Nome</th>
             <th scope="col">Ultimo Nome</th>
             <th scope="col">Area</th>
