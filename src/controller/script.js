@@ -311,51 +311,58 @@ function div(select){
   //////////////////////////////////////////////////////////////////////////
 
   const tabelaTurmas = document.getElementById('categoria').innerHTML = 
-    `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+    `<div class="container">
+      <div id="categoria"><div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">Turma</th>
-            <th scope="col">Primeiro Nome</th>
-            <th scope="col">Ultimo Nome</th>
-            <th scope="col">Email</th>
-            <th scope="col">Estado</th>
+          <th scope="col"></th>
+          <th scope="col">Turma</th>
+          <th scope="col">Curso</th>
+          <th scope="col">Diretor de turma</th>
+          <th scope="col">Alunos</th>
+          <th scope="col">Alunos com estagio</th>         
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>TIS T1</td>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>ruben.francico38@gmail.com</td>
             <td><div id="circulo"></div></td>
+            <td>TIS T1</td>
+            <td>Tecnico de informatica sistemas-</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td>10</td>
           </tr>
 
           <tr>
-            <td>TIS T1</td>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>ruben.francico38@gmail.com</td>
             <td><div id="circulo"></div></td>
+            <td>TIS T1</td>
+            <td>Tecnico de informatica sistemas-</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td>10</td>
           </tr>
 
           <tr>
-            <td>TIS T1</td>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>ruben.francico38@gmail.com</td>
             <td><div id="circulo"></div></td>
+            <td>TIS T1</td>
+            <td>Tecnico de informatica - sistemas</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td>10</td>
           </tr>
 
           <tr>
-            <td>TIS T1</td>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>ruben.francico38@gmail.com</td>
             <td><div id="circulo"></div></td>
+            <td>TIS T1</td>
+            <td>Tecnico de informatica - sistemas</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td>10</td>
           </tr>
         </tbody>
       </table>
+    </div></div>
     </div>`
   
   //////////////////////////////////////////////////////////////////////////
