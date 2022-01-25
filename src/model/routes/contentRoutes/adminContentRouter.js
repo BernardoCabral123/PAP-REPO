@@ -4,18 +4,34 @@ const express = require("express");
 const router = express.Router();
 
 //Criar Recursos
-router.get("/admin/criarAdmins",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/model/content/admin/criarAdmins.html"));
+router.get("/criarAdmins",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/criarRecursos/criarAdmins.html"));
 })
 
-router.get("/admin/criarDTs",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/model/content/admin/criarDTs.html"));
+router.get("/criarDTs",(req,res)=>{
+   res.sendFile(path.join(srcLocation,"/model/content/admin/criarRecursos/criarDTs.html"));
 })
 
-router.get("/admin/criarAlunos",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/model/content/admin/criarAlunos.html"));
+router.get("/criarAlunos",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/criarRecursos/criarAlunos.html"));
 })
+
 
 //Gerir Recursos
+router.get("/gerirAdmins",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/gerirRecursos/gerirAdmins.html"));
+})
+
+router.get("/gerirDTs",(req,res)=>{
+   res.sendFile(path.join(srcLocation,"/model/content/admin/gerirRecursos/gerirDTs.html"));
+})
+
+router.get("/gerirAlunos",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/gerirRecursos/gerirAlunos.html"));
+})
+
+router.get("/gerirEmpresas",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/gerirRecursos/gerirEmpresas.html"));
+})
 
 module.exports = router;
