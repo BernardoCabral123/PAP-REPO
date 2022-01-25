@@ -375,6 +375,7 @@ INSERT INTO `turma` VALUES (9,2,3,1);
 /*!40000 ALTER TABLE `turma` ENABLE KEYS */;
 UNLOCK TABLES;
 
+
 --
 -- Dumping events for database 'plataformaestagios'
 --
