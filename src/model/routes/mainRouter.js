@@ -10,6 +10,7 @@ router.use("/api",apiRouter);
 const fileRouter = require("./fileRouter");
 router.use("/files",fileRouter);
 
+router.use("/content", require("./contentRouter"));
 
 //todos
 router.get("/",(req,res)=>{
