@@ -1,5 +1,5 @@
 function renderNav(){
-    fetch("http://localhost:3000/api/content/navbar")
+    fetch("http://localhost:3000/content/navbar")
     .then(res => res.text())
     .then(data => renderCode("navbar",data))
     .catch((err)=>{
@@ -8,7 +8,7 @@ function renderNav(){
     });
 }
 function renderFooter(){
-    fetch("http://localhost:3000/api/content/footer")
+    fetch("http://localhost:3000/content/footer")
     .then(res => res.text())
     .then(data => renderCode("footer",data))
     .catch((err)=>{
