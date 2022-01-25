@@ -28,6 +28,10 @@
     border-radius: 25px;
 }
 
+#navbarNav{
+    justify-content: end !important;
+}
+
 @media (max-width: 720px) {
     .card{
         display: flex !important;

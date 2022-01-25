@@ -8,6 +8,10 @@ body{
     color: #434343;
 }
 
+#navbarNav{
+    justify-content: end !important;
+}
+
 .background{
     position: absolute;
 }
