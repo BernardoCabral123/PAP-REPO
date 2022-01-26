@@ -11,6 +11,10 @@ router.get("/pessoa.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/pessoa.svg"));
 })
 
+router.get("/diretorTurma.svg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/diretorTurma.svg"));
+})
+
 router.get("/edificio.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/edificio.png"));
 })
@@ -25,6 +29,10 @@ router.get("/criarAnuncio.svg",(req,res)=>{
 
 router.get("/criarEmpre.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/criarEmpre.svg"));
+})
+
+router.get("/criarAluno.svg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/criarAluno.svg"));
 })
 
 router.get("/dados.png",(req,res)=>{
