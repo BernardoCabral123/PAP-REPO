@@ -21,10 +21,31 @@ body {
     animation-duration: 1.5s;
 }
 
+/*
+.banner1{
+    position: relative;
+    z-index: 1000;
+}
+
+.top{
+    position: relative;
+    background-image: linear-gradient(to right, #3898ec, #3898ec);
+    color: white;
+    padding-top: 5%;
+}
+
+.wave{
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+}
+
 #background{
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 80% 100%);
     background-color: #3E8AFF;
 }
+
+*/
 
 .img-1 img{
     width: 350px;
