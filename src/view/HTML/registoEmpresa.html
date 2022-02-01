@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-pt">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,75 +24,72 @@
     <body onload="renderNavFoot();">
         <div id="navbar"></div>
 
-
-        <div id="formulario" class="container mt-5 shadow-lg p-3 mb-5 bg-body rounded">
-            <center><div class="mt-1">
-                <h1>Registo</h1>
-                <p>Se ja tiver conta toque aqui <a href="http://localhost:3000/login">Login</a></p>
-            </div></center>
-
-            <div class="registo">
-                <div class="esquerda">
-                    <img id="conta" class="img-fluid" src="http://localhost:3000/files/Assets/criarEmpre.svg" alt="" style="width: 350px; height: auto;">
+        <div class="container mt-5">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="info">
+                    <center><div class="mt-1">
+                        <h1>Registo</h1>
+                        <p>Se ja tiver conta toque aqui <a href="http://localhost:3000/login">Login</a></p>
+                    </div></center>
                 </div>
+                <div class="row">
+                    <div class="imgCriarAnuncio col-sm-6 mt-3">
+                        <img class="img-fluid" src="http://localhost:3000/files/Assets/criarEmpre.svg" alt="criar conta">
+                    </div>
 
-                <div class="direita mt-2" style="max-width: 460px;">
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-12 mt-1">
-                                <label for="nomeempresa" class="form-label">Nome Empresa</label>
-                                <input type="text" class="form-control" id="nomeempresa" style="border-radius: 15px;">
-                            </div>
-        
-                            <div class="col-sm-12 mt-1">
-                                <label for="emailadd" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="emailadd" aria-describedby="emailHelp" style="border-radius: 15px;">
-                                <div id="emailHelp" class="form-text"></div>
-                            </div>
+                    <div class="formulario col-sm-6 mt-5">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-12 mt-1">
+                                    <label for="nomeempresa" class="form-label">Nome Empresa</label>
+                                    <input type="text" class="form-control" id="nomeempresa" style="border-radius: 15px;">
+                                </div>
+            
+                                <div class="col-sm-12 mt-1">
+                                    <label for="emailadd" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="emailadd" aria-describedby="emailHelp" style="border-radius: 15px;">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+
+                                <div class="col-sm-12 mt-1">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" style="border-radius: 15px;">
+                                </div>
                     
-                            <div class="col-sm-12 mt-1">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" style="border-radius: 15px;">
-                            </div>
-                
-                            <div class="col-sm-12 mt-1">
-                                <label for="contribuinte" class="form-label">Contribuinte</label>
-                                <input type="text" class="form-control" id="Contribuinte" style="border-radius: 15px;">
-                            </div>
-                
-                            <div class="col-sm-12 mt-1">
-                                <label for="assinante" class="form-label">Assinante de protocologos</label>
-                                <input type="text" class="form-control" id="assinante" style="border-radius: 15px;">
-                            </div>
-                
-                            <div class="col-sm-12 mt-1">
-                                <label for="morada" class="form-label">Morada da sede</label>
-                                <input type="text" class="form-control" id="morada" style="border-radius: 15px;">
-                            </div>
-                
-                            <div class="col-sm-12 mt-1">
-                                <label for="postal" class="form-label">Codico Postal</label>
-                                <input type="number" class="form-control" id="postal" style="border-radius: 15px;">
-                            </div>
+                                <div class="col-sm-6 mt-1">
+                                    <label for="morada" class="form-label">Rua</label>
+                                    <input type="text" class="form-control" id="morada" style="border-radius: 15px;">
+                                </div>
+
+                                <div class="col-sm-6 mt-1">
+                                    <label for="NRua" class="form-label">Nº Porta/</label>
+                                    <input type="text" class="form-control" id="NRua" style="border-radius: 15px;">
+                                </div>                               
                     
-                            <div class="col-sm-6 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1" style="border-radius: 15px;">
-                                <label class="form-check-label" for="exampleCheck1">Aceitar termos</label>
+                                <div class="col-sm-6 mt-1">
+                                    <label for="ilha" class="form-label">Ilha</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="col-sm-6 mt-1">
+                                    <label for="conselho" class="form-label">Conselho</label>
+                                    <input type="text" class="form-control" id="conselho" style="border-radius: 15px;">
+                                </div>
+                                
+                                <div class="col-sm-12 justify-content-center mt-5">
+                                    <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Criar conta</button></center>
+                                </div>
                             </div>
-                
-                            <div class="col-sm-6 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1" style="border-radius: 15px;">
-                                <label class="form-check-label" for="exampleCheck1">Aceitar termos</label>
-                            </div>
-        
-                            <center><button type="submit" class="btn btn-primary mt-2 mb-2" style="border-radius: 30px; width: 35%;">Submit</button> </center>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <br></br>
-
         <div id="footer"></div>
     </body>
 </html>
