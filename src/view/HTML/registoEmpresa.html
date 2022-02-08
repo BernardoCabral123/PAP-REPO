@@ -7,6 +7,7 @@
         <!-- Meu -->
         <link rel="stylesheet" href="http://localhost:3000/files/styles/login.css">
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
+        <script src="http://localhost:3000/files/controllers/registoEmpresa.js"></script>
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
         <!-- botstrap -->
@@ -53,7 +54,7 @@
 
                                 <div class="col-sm-12 mt-1">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" style="border-radius: 15px;">
+                                    <input type="password" class="form-control" id="password" style="border-radius: 15px;">
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
@@ -67,8 +68,8 @@
                                 </div>
 
                                 <div class="col-sm-6 mt-1">
-                                    <label for="NRua" class="form-label">Nº Porta</label>
-                                    <input type="text" class="form-control" id="NRua" style="border-radius: 15px;">
+                                    <label for="nRua" class="form-label">Nº Porta</label>
+                                    <input type="text" class="form-control" id="nRua" style="border-radius: 15px;">
                                 </div>                               
                     
                                 <div class="col-sm-6 mt-1">
@@ -92,7 +93,7 @@
                                 </div>
                                 
                                 <div class="col-sm-12 justify-content-center mt-5">
-                                    <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Criar conta</button></center>
+                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="criarContaEmpresario();">Criar conta</button></center>
                                 </div>
                             </div>
                         </form>

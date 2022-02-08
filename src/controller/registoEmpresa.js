@@ -1,26 +1,27 @@
 function criarContaEmpresario(){
     //obeter valores do formulario
-    let nome = document.getElementById('nomeAluno').value
-    let moradaRua = document.getElementById('moradaRua').value
-    let moradaNum = document.getElementById('moradaNum').value
-    let data = document.getElementById('dataNasc').value
-    let numTel = document.getElementById('telemovelAluno').value
-    let email = document.getElementById('email').value
-    let tipo = document.getElementById('tipo').value
+    let nome = document.getElementById('nomeempresa').value
+    let email = document.getElementById('emailadd').value
+    let password = document.getElementById('password').value
+    let nTelemovel = document.getElementById('nTelemovel').value
+    let morada = document.getElementById('morada').value
+    let nRua = document.getElementById('nRua').value
+
+    console.log(nome,email,password,nTelemovel,morada,nRua);
     
     //criar um objeto com os valores
     let objeto = {
-        username: nome,
-        moradarua: moradaRua,
-        moradanumero: moradaNum,
-        datanascimento: data,
-        telemovel: numTel,
-        email: email,
-        tipos: tipo
+        nome: nome,
+        emailEmpresario: email,
+        pass: password,
+        telemovel: nTelemovel,
+        moradaR: morada,
+        moradaN: nRua,
     }
 
     //trasnformar o objeto em jason
     let objetoJSON = JSON.stringify(objeto)
+    console.log(objetoJSON)
 
     const options = {
         method: 'POST',
@@ -39,3 +40,5 @@ function criarContaEmpresario(){
         alert(err)
     })
 }
+
+

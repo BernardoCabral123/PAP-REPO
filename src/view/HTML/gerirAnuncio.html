@@ -72,111 +72,115 @@
             <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
                 <div class="row">
                     <div class="col-sm-6">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col-sm-4">Solicitações</th>
-                                <th scope="col-sm-4">Email</th>
-                                <th scope="col-sm-4">Opções</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Mark</td>
-                                <td>dadassda@gmail.com</td>
-                                <td class="col-sm-6"><button type="submit" class="btn btn-primary">Perfil</button> <button type="submit" class="btn btn-primary">Aceitar</button> <button type="submit" class="btn btn-danger">Rejeitar</button></td>
-                              </tr>
-                              <tr>
-                                <td>Mark</td>
-                                <td>dadassdad@gmail.com</td>
-                                <td><button type="submit" class="btn btn-primary">Perfil</button> <button type="submit" class="btn btn-primary">Aceitar</button> <button type="submit" class="btn btn-danger">Rejeitar</button></td>
-                              </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive-sm">
+                            <table class="table table-sm align-middle">
+                                <thead>
+                                    <tr>
+                                    <th scope="col-sm-4">Solicitações</th>
+                                    <th scope="col-sm-4">Email</th>
+                                    <th scope="col-sm-4">Opções</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>Mark</td>
+                                    <td>dadassda@gmail.com</td>
+                                    <td><button type="submit" class="btn btn-primary">Perfil</button> <button type="submit" class="btn btn-primary">Aceitar</button> <button type="submit" class="btn btn-danger">Rejeitar</button></td>
+                                    </tr>
+                                    <tr>
+                                    <td>Mark</td>
+                                    <td>dadassdad@gmail.com</td>
+                                    <td><button type="submit" class="btn btn-primary"><i class="fas fa-user-alt"></i></button> <button type="submit" class="btn btn-success"><i class="fas fa-check"></i></button> <button type="submit" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                     <div class="col-sm-6">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col-sm-6">Confirmados</th>
-                                <th scope="col-sm-6">Email</th>
-                                <th scope="col-sm-6">Opções</th>
-                              </tr>
-                            </thead>
-                            <tbody>
+                        <div class="table-responsive-sm">
+                            <table class="table table-sm">
+                                <thead>
                                 <tr>
-                                    <td>Duarte</td>
-                                    <td>Duarte@gmail.com</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">perfil</button>
-                                        
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="container mt-2">
-                                                            <div id="imgPerfil" class="shadow-lg p-1 mt-2 mx-auto d-block border">
-                                                                <img src="http://localhost:3000/files/Assets/profile.svg" class="img-thumbnail rounded rounded-circle mx-auto d-block border border-light" alt="" style="height: 250px;">
-                                                            </div>
-                                                
-                                                            <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-                                                                <div class="row">
-                                                                    <div class="conteudo col-sm-12 mt-4">
-                                                                        <div class="row">
-                                                                            <div class="col-sm-4">
-                                                                                <h5>Nome</h5>
-                                                                                <p>Diogo Branco</p>
-                                                                            </div>
-                                                
-                                                                            <div class="col-sm-4">
-                                                                                <h5>Curso</h5>
-                                                                                <p>Tecnico de informatica - Sistemas</p>                            
-                                                                            </div>
-                                                
-                                                                            <div class="col-sm-4">
-                                                                                <h5>Turma</h5>
-                                                                                <p>T1</p>                            
-                                                                            </div>
-                                                
-                                                                            <div class="col-sm-4">
-                                                                                <h5>Data de nascimento</h5>
-                                                                                <p>10/12/2002</p>                            
-                                                                            </div>
-                                                
-                                                                            <div class="col-sm-4">
-                                                                                <h5>Morada</h5>
-                                                                                <p>São pedro, Ponta Delgada, São Miguel</p>
-                                                                            </div>
-                                                
-                                                                            <div class="col-sm-4">
-                                                                                <h5>Currícolo</h5>
-                                                                                <div class="form-group">
-                                                                                    <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i></button>
-                                                                                </div>                            
+                                    <th scope="col-sm-6">Confirmados</th>
+                                    <th scope="col-sm-6">Email</th>
+                                    <th scope="col-sm-6">Opções</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Duarte</td>
+                                        <td>Duarte@gmail.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">perfil</button>
+                                            
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <div class="container mt-2">
+                                                                <div id="imgPerfil" class="shadow-lg p-1 mt-2 mx-auto d-block border">
+                                                                    <img src="http://localhost:3000/files/Assets/profile.svg" class="img-thumbnail rounded rounded-circle mx-auto d-block border border-light" alt="" style="height: 250px;">
+                                                                </div>
+                                                    
+                                                                <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+                                                                    <div class="row">
+                                                                        <div class="conteudo col-sm-12 mt-4">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4">
+                                                                                    <h5>Nome</h5>
+                                                                                    <p>Diogo Branco</p>
+                                                                                </div>
+                                                    
+                                                                                <div class="col-sm-4">
+                                                                                    <h5>Curso</h5>
+                                                                                    <p>Tecnico de informatica - Sistemas</p>                            
+                                                                                </div>
+                                                    
+                                                                                <div class="col-sm-4">
+                                                                                    <h5>Turma</h5>
+                                                                                    <p>T1</p>                            
+                                                                                </div>
+                                                    
+                                                                                <div class="col-sm-4">
+                                                                                    <h5>Data de nascimento</h5>
+                                                                                    <p>10/12/2002</p>                            
+                                                                                </div>
+                                                    
+                                                                                <div class="col-sm-4">
+                                                                                    <h5>Morada</h5>
+                                                                                    <p>São pedro, Ponta Delgada, São Miguel</p>
+                                                                                </div>
+                                                    
+                                                                                <div class="col-sm-4">
+                                                                                    <h5>Currícolo</h5>
+                                                                                    <div class="form-group">
+                                                                                        <button type="button" class="btn btn-primary"><i class="fas fa-arrow-circle-down"></i></button>
+                                                                                    </div>                            
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>                                                          
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>                                                          
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </td>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>markdasda@gmail.com</td>
+                                    <td><button type="submit" class="btn btn-primary">perfil</button></td>
                                 </tr>
-                              <tr>
-                                <td>Mark</td>
-                                <td>markdasda@gmail.com</td>
-                                <td><button type="submit" class="btn btn-primary">perfil</button></td>
-                              </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>

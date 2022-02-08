@@ -4,23 +4,24 @@ function criarAnuncio(){
     let area = document.getElementById('area').value
     let descricao = document.getElementById('descricao').value
     let vagas = document.getElementById('vagas').value
-    let ilha = document.getElementById('ilha').value
-    let conselho = document.getElementById('conselho').value
+    //let ilha = document.getElementById('ilha').value
+    //let conselho = document.getElementById('conselho').value
     //bollean true false let tipo = document.getElementById('ib').value
-    
+    console.log(curso,area,descricao,vagas)
     //criar um objeto com os valores
     let objeto = {
-        username: curso,
-        moradarua: area,
-        moradanumero: descricao,
-        datanascimento: vagas,
-        telemovel: ilha,
-        email: conselho,
+        curso: curso,
+        area: area,
+        descricao: descricao,
+        qtdVagas: vagas,
+        //telemovel: ilha,
+        //email: conselho,
     }
 
     //trasnformar o objeto em jason
     let objetoJSON = JSON.stringify(objeto)
-
+    console.log(objetoJSON)
+    
     const options = {
         method: 'POST',
         headers: {

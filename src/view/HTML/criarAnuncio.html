@@ -7,6 +7,7 @@
         <!-- Meu -->
         <link rel="stylesheet" href="http://localhost:3000/files/styles/login.css">
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
+        <script src="http://localhost:3000/files/controllers/criarAnuncio.js"></script>
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
         <!-- botstrap -->
@@ -57,12 +58,22 @@
                     
                                 <div class="col-sm-6 mt-1">
                                     <label for="ilha" class="form-label">Ilha</label>
-                                    <input type="text" class="form-control" id="ilha" style="border-radius: 15px;">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                     
                                 <div class="col-sm-6 mt-1">
-                                    <label for="concelho" class="form-label">Concelho</label>
-                                    <input type="text" class="form-control" id="concelho" style="border-radius: 15px;">
+                                    <label for="ilha" class="form-label">Concelho</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                                 
                                 <div class="informacao mt-4">
@@ -71,31 +82,25 @@
                                     </p></center>
                                 </div>
                                 
+                                
                                 <div class="row">
-                                    <div class="col-sm-4"></div>
-                                    
-                                    <div class="col-sm-2">
-                                        <div class= "form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" style="border-radius: 15px;">
-                                            <label class="form-check-label" for="exampleCheck1">Sim</label>
-                                        </div>
+                                    <div class="col-6 form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="radioSim" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                        Sim
+                                        </label>
                                     </div>
-
-                                    <div class="col-sm-2">
-                                        <div class= "form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" style="border-radius: 15px;">
-                                            <label class="form-check-label" for="exampleCheck1">Não</label>
-                                        </div>
+                                    <div class="col-6 form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="radioNao" value="option2">
+                                        <label class="form-check-label" for="radioNao">
+                                        Não
+                                        </label>
                                     </div>
                                 </div>
                                 
                                 <center><div class="row mt-2">
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Criar anuncio</button>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Cancelar</button>
+                                    <div class="col-sm-12">
+                                        <button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="criarAnuncio();">Criar anuncio</button>
                                     </div>
                                 </div></center>
                             </div>
