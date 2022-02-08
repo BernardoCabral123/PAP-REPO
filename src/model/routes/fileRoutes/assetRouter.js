@@ -59,4 +59,12 @@ router.get("/servidores.jpg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/servidores.jpg"));
 })
 
+router.get("/principal.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/principal.png"));
+})
+
+router.get("/principal.jpg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/principal.jpg"));
+})
+
 module.exports = router;

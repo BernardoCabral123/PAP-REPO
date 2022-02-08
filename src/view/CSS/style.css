@@ -21,7 +21,7 @@ body {
     animation-duration: 1.5s;
 }
 
-/*
+
 .banner1{
     position: relative;
     z-index: 1000;
@@ -31,7 +31,12 @@ body {
     position: relative;
     background-image: linear-gradient(to right, #3898ec, #3898ec);
     color: white;
-    padding-top: 5%;
+    padding-top: 2%;
+}
+
+.ban-img{
+    position: relative;
+    z-index: 10000;
 }
 
 .wave{
@@ -45,7 +50,7 @@ body {
     background-color: #3E8AFF;
 }
 
-*/
+
 
 .img-1 img{
     width: 350px;
