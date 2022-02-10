@@ -23,7 +23,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Registo</title>
     </head>
-    <body onload="renderNavFoot();">
+    <body onload="renderNavFoot(),fillIlhas()">
         <div id="navbar"></div>
 
         <div class="container mt-5">
@@ -65,21 +65,17 @@
                     
                                 <div class="col-sm-6 mt-1">
                                     <label for="ilha" class="form-label">Ilha</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected></option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-select" aria-label="Default select example" id="ilha" onchange="getConcelhos();">
+                                        <option value="0" selected></option>
+                                        
                                     </select>
                                 </div>
                     
                                 <div class="col-sm-6 mt-1">
                                     <label for="conselho" class="form-label">Concelho</label>
-                                    <select id="concelho" class="form-select" aria-label="Default select example">
+                                    <select id="concelho" class="form-select" aria-label="Default select example" id="concelho">
                                         <option selected></option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        
                                     </select>
                                 </div>
 

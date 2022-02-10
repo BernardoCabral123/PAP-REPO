@@ -1,32 +1,34 @@
 var ilhas;
-var concelhos; 
-var idConcelho;
+var concelhos;
 
-function getIlhas(){
-    const tipo = document.getElementById('ilha')
-    fetch('http://localhost:3000/api/ilha')
+
+async function fillIlhas(){
+    await fetch('http://localhost:3000/api/localizacao/ilhas')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-        tipo.innerHTML= `<option selected>Escolha um tipo de utilizador...</option>`;
-        for(i in data){
-            let op = 
-            `<option value="${data[i].idtipo}">${data[i].designacao}</option>`
-            tipo.innerHTML += op
-        }
-    })
+        for(let i = 0; i< data.length; i++){
+            document.getElementById("ilha").innerHTML+= `<option value="${data[i].idIlha}">${data[i].nome}</option>`
+    }})
     .catch((err)=>{
+        console.log(err)
         alert('Erro na recolha das ilhas')
     })
 }
 
-function getConcelhos(){
-
+async function getConcelhos(){
+    await fetch(`http://localhost:3000/api/localizacao/concelhos/${document.getElementById("ilha").value}`)
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("concelho").innerHTML="";
+        for(let i = 0; i< data.length; i++){
+            document.getElementById("concelho").innerHTML+= `<option value="${data[i].idConcelho}">${data[i].nome}</option>`
+    }})
+    .catch((err)=>{
+        alert('Erro na recolha dos concelhos')
+    })
 }
 
-
 function criarConta(){
-    
     //criar um objeto com os valores do formulário
     let objeto = {
         nome: document.getElementById('nomeempresa').value,
