@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="http://localhost:3000/files/styles/login.css">
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
         <script src="http://localhost:3000/files/controllers/registoEmpresa.js"></script>
+        <script src="http://localhost:3000/files/controllers/registoEmpresav2.js"></script>
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
         <!-- botstrap -->
@@ -39,7 +40,7 @@
                     </div>
 
                     <div class="formulario col-sm-6 mt-5">
-                        <form>
+                        <form id="registoEmpresario">
                             <div class="row">
                                 <div class="col-sm-12 mt-1">
                                     <label for="nomeempresa" class="form-label">Nome Empresa</label>
@@ -95,7 +96,7 @@
                                 
                                 
                                 <div class="col-sm-12 justify-content-center mt-5">
-                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="criarContaEmpresario();">Criar conta</button></center>
+                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="empresario.aguardar();">Criar conta</button></center>
                                 </div>
                             </div>
                         </form>
@@ -103,6 +104,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="table-responsive-sm">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col"><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></th>
+                            <th scope="col">Primeiro Nome</th>
+                            <th scope="col">Ultimo Nome</th>
+                            <th scope="col">Turma</th>
+                            <th scope="col">Curso</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">opções</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tabela">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
         <div id="footer"></div>
     </body>
 </html>
