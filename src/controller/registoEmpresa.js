@@ -1,25 +1,44 @@
-function criarContaEmpresario(){
-    //obeter valores do formulario
-    let nome = document.getElementById('nomeempresa').value
-    let email = document.getElementById('emailadd').value
-    let password = document.getElementById('password').value
-    let nTelemovel = document.getElementById('nTelemovel').value
-    let morada = document.getElementById('morada').value
-    let nRua = document.getElementById('nRua').value
+var ilhas;
+var concelhos; 
+var idConcelho;
 
-    console.log(nome,email,password,nTelemovel,morada,nRua);
+function getIlhas(){
+    const tipo = document.getElementById('ilha')
+    fetch('http://localhost:3000/api/ilha')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        tipo.innerHTML= `<option selected>Escolha um tipo de utilizador...</option>`;
+        for(i in data){
+            let op = 
+            `<option value="${data[i].idtipo}">${data[i].designacao}</option>`
+            tipo.innerHTML += op
+        }
+    })
+    .catch((err)=>{
+        alert('Erro na recolha das ilhas')
+    })
+}
+
+function getConcelhos(){
+
+}
+
+
+function criarConta(){
     
-    //criar um objeto com os valores
+    //criar um objeto com os valores do formulário
     let objeto = {
-        nome: nome,
-        emailEmpresario: email,
-        pass: password,
-        telemovel: nTelemovel,
-        moradaR: morada,
-        moradaN: nRua,
+        nome: document.getElementById('nomeempresa').value,
+        email: document.getElementById('emailadd').value,
+        password: document.getElementById('password').value,
+        contactoTelefonico: document.getElementById('contactoTelefonico').value,
+        idConcelho: null, //precisa de codigo
+        rua: document.getElementById('rua').value,
+        numero: document.getElementById('numero').value
     }
 
-    //trasnformar o objeto em jason
+    //trasnformar o objeto em json
     let objetoJSON = JSON.stringify(objeto)
     console.log(objetoJSON)
 
