@@ -31,7 +31,7 @@
                 <div class="info">
                     <center><div class="mt-1">
                         <h1>Registo</h1>
-                        <p>Se ja tiver conta toque aqui <a href="http://localhost:3000/login">Login</a></p>
+                        <p>Se ja tiver conta faça <a href="http://localhost:3000/login">Login</a></p>
                     </div></center>
                 </div>
                 <div class="row">
@@ -43,13 +43,13 @@
                         <form id="registoEmpresario">
                             <div class="row">
                                 <div class="col-sm-12 mt-1">
-                                    <label for="nomeempresa" class="form-label">Nome Empresa</label>
-                                    <input type="text" class="form-control" id="nomeempresa" style="border-radius: 15px;">
+                                    <label for="nomeempresa" class="form-label">Nome Empresa </label>
+                                    <input type="text" class="form-control" id="nome" style="border-radius: 15px;">
                                 </div>
             
                                 <div class="col-sm-12 mt-1">
                                     <label for="emailadd" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="emailadd" aria-describedby="emailHelp" style="border-radius: 15px;">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" style="border-radius: 15px;">
                                     <div id="emailHelp" class="form-text"></div>
                                 </div>
 
@@ -59,8 +59,8 @@
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
-                                    <label for="nTelemovel" class="form-label">Número de telemovel</label>
-                                    <input type="text" class="form-control" id="nTelemovel" style="border-radius: 15px;">
+                                    <label for="nTelemovel" class="form-label">Contacto telefónico (+351)</label>
+                                    <input type="text" class="form-control" id="contactoTelefonico" style="border-radius: 15px;" maxlength="9">
                                 </div>
                     
                                 <div class="col-sm-6 mt-1">
@@ -73,7 +73,7 @@
                     
                                 <div class="col-sm-6 mt-1">
                                     <label for="conselho" class="form-label">Concelho</label>
-                                    <select id="concelho" class="form-select" aria-label="Default select example" id="concelho">
+                                    <select class="form-select" aria-label="Default select example" id="concelho" disabled>
                                         <option selected></option>
                                         
                                     </select>
@@ -81,18 +81,19 @@
 
                                 <div class="col-sm-6 mt-1">
                                     <label for="morada" class="form-label">Rua</label>
-                                    <input type="text" class="form-control" id="morada" style="border-radius: 15px;">
+                                    <input type="text" class="form-control" id="rua" style="border-radius: 15px;">
                                 </div>
 
                                 <div class="col-sm-6 mt-1">
                                     <label for="nRua" class="form-label">Nº Porta</label>
-                                    <input type="text" class="form-control" id="nRua" style="border-radius: 15px;">
+                                    <input type="text" class="form-control" id="numero" style="border-radius: 15px;">
                                 </div>                               
                     
                                 
                                 
                                 <div class="col-sm-12 justify-content-center mt-5">
-                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="empresario.aguardar();">Criar conta</button></center>
+                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="cConta();">Criar conta</button></center>
+                                    <center><div id="erroIncompleto" style="padding-top: 15px;"></div></center>
                                 </div>
                             </div>
                         </form>

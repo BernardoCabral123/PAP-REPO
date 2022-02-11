@@ -16,17 +16,43 @@ async function fillIlhas(){
 }
 
 async function getConcelhos(){
-    await fetch(`http://localhost:3000/api/localizacao/concelhos/${document.getElementById("ilha").value}`)
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById("concelho").innerHTML="";
-        for(let i = 0; i< data.length; i++){
-            document.getElementById("concelho").innerHTML+= `<option value="${data[i].idConcelho}">${data[i].nome}</option>`
-    }})
-    .catch((err)=>{
-        alert('Erro na recolha dos concelhos')
-    })
+    if(document.getElementById("ilha").value != 0){
+        document.getElementById('concelho').disabled = false;
+        await fetch(`http://localhost:3000/api/localizacao/concelhos/${document.getElementById("ilha").value}`)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("concelho").innerHTML="";
+            for(let i = 0; i< data.length; i++){
+                document.getElementById("concelho").innerHTML+= `<option value="${data[i].idConcelho}">${data[i].nome}</option>`
+        }})
+        .catch((err)=>{
+            alert('Erro na recolha dos concelhos')
+        })
+    }
+    else{
+
+        document.getElementById('concelho').value = 0;
+        document.getElementById('concelho').disabled = true;
+    }
 }
+
+function cConta(){
+    if(document.getElementById("nome").value != "" 
+    && document.getElementById("email").value != "" 
+    && document.getElementById("password").value != "" 
+    && document.getElementById("contactoTelefonico").value != "" 
+    && document.getElementById("concelho").value != 0
+    && document.getElementById("rua").value != ""
+    && document.getElementById("numero").value != ""){
+        
+    }else{
+        document.getElementById("erroIncompleto").innerHTML = `<label class="form-label" style="color: red;">Preencha todos os campos</label>`
+    }
+}
+
+
+
+
 
 function criarConta(){
     //criar um objeto com os valores do formulário
