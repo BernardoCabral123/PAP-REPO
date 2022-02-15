@@ -81,13 +81,13 @@ class Empresario{
 
     lerDados(){
         const empresario = {}
-        empresario.id = this.id;
-        empresario.nome = document.getElementById('nomeempresa').value
-        empresario.email = document.getElementById('emailadd').value
+        //empresario.id = this.id;
+        empresario.nome = document.getElementById('nome').value
+        empresario.email = document.getElementById('email').value
         empresario.password = document.getElementById('password').value
-        empresario.nTelemovel = document.getElementById('nTelemovel').value
-        empresario.morada = document.getElementById('morada').value
-        empresario.nRua = document.getElementById('nRua').value
+        empresario.nTelemovel = document.getElementById('contactoTelefonico').value
+        empresario.morada = document.getElementById('rua').value
+        empresario.nRua = document.getElementById('numero').value
 
         return empresario;
     }

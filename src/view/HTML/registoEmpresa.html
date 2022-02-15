@@ -61,8 +61,8 @@
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
-                                    <label for="nTelemovel" class="form-label">Contacto telefónico (+351)</label>
-                                    <input type="number" class="form-control" id="contactoTelefonico" onKeyPress="if(this.value.length==9) return false;">
+                                    <label for="nTelemovel" class="form-label">Contacto telefónico</label>
+                                    <input type="number" class="form-control" id="contactoTelefonico" onKeyPress="if(this.value.length==9) return false;" placeholder="+351">
                                 </div>
                                 
                                 <div class="col-sm-6 mt-1">
@@ -93,7 +93,7 @@
                                 
                                 
                                 <div class="col-sm-12 justify-content-center mt-5">
-                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="cConta();">Criar conta</button></center>
+                                    <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="empresario.aguardar(); //cConta();">Criar conta</button></center>
                                     <center><div id="erro" style="padding-top: 15px;"></div></center>
                                 </div>
                             </div>
