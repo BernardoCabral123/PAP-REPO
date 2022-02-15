@@ -25,7 +25,7 @@
     </head>
     <body onload="renderNavFoot(),fillIlhas()">
         <div id="navbar"></div>
-
+        <label class="form-label" style="color: red; display: inline-block; width: 100%; text-align: right;"> inválido</label>
         <div class="container mt-5">
             <div class="shadow-lg p-3 mb-5 bg-body rounded">
                 <div class="info">
@@ -44,25 +44,27 @@
                             <div class="row">
                                 <div class="col-sm-12 mt-1">
                                     <label for="nomeempresa" class="form-label">Nome Empresa </label>
-                                    <input type="text" class="form-control" id="nome" style="border-radius: 15px;">
+                                    <input type="text" class="form-control" id="nome" maxlength="50">
                                 </div>
             
                                 <div class="col-sm-12 mt-1">
-                                    <label for="emailadd" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" style="border-radius: 15px;">
+                                    <div class="col-sm-12 mt-1" style="display: flex; justify-content: space-between;"></div>
+                                        <label for="emailadd" class="form-label">Email </label>
+                                        <label class="form-label" style="color: red; display: inline-block; width: 100%; text-align: right;"> inválido</label>
+                                    </div>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" maxlength="255">
                                     <div id="emailHelp" class="form-text"></div>
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" style="border-radius: 15px;">
+                                    <input type="password" class="form-control" id="password" maxlength="2">
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
                                     <label for="nTelemovel" class="form-label">Contacto telefónico (+351)</label>
-                                    <input type="text" class="form-control" id="contactoTelefonico" style="border-radius: 15px;" maxlength="9">
+                                    <input type="number" class="form-control" id="contactoTelefonico" onKeyPress="if(this.value.length==9) return false;">
                                 </div>
-                    
                                 <div class="col-sm-6 mt-1">
                                     <label for="ilha" class="form-label">Ilha</label>
                                     <select class="form-select" aria-label="Default select example" id="ilha" onchange="getConcelhos();">
@@ -75,25 +77,24 @@
                                     <label for="conselho" class="form-label">Concelho</label>
                                     <select class="form-select" aria-label="Default select example" id="concelho" disabled>
                                         <option selected></option>
-                                        
                                     </select>
                                 </div>
 
                                 <div class="col-sm-6 mt-1">
                                     <label for="morada" class="form-label">Rua</label>
-                                    <input type="text" class="form-control" id="rua" style="border-radius: 15px;">
+                                    <input type="text" class="form-control" id="rua" maxlength="100">
                                 </div>
 
                                 <div class="col-sm-6 mt-1">
                                     <label for="nRua" class="form-label">Nº Porta</label>
-                                    <input type="text" class="form-control" id="numero" style="border-radius: 15px;">
+                                    <input type="text" class="form-control" id="numero" maxlength="10">
                                 </div>                               
                     
                                 
                                 
                                 <div class="col-sm-12 justify-content-center mt-5">
                                     <center><button type="button" class="col-sm-6 btn btn-primary" style="border-radius: 30px;" onclick="cConta();">Criar conta</button></center>
-                                    <center><div id="erroIncompleto" style="padding-top: 15px;"></div></center>
+                                    <center><div id="erro" style="padding-top: 15px;"></div></center>
                                 </div>
                             </div>
                         </form>
