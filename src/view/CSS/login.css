@@ -10,6 +10,20 @@ body{
     color: #434343;
 }
 
+
+input{
+    border-radius: 10px !important;
+}
+select{
+        border-radius: 10px !important;
+}
+
+input::-webkit-outer-spin-button, /*  remover os butões nos campos type number */
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
 .background{
     position: absolute;
 }

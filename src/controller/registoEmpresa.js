@@ -37,6 +37,9 @@ async function getConcelhos(){
 }
 
 function cConta(){
+    
+    document.getElementById("erro").innerHTML = ``;
+
     if(document.getElementById("nome").value != "" 
     && document.getElementById("email").value != "" 
     && document.getElementById("password").value != "" 
@@ -44,12 +47,17 @@ function cConta(){
     && document.getElementById("concelho").value != 0
     && document.getElementById("rua").value != ""
     && document.getElementById("numero").value != ""){
-        
+
     }else{
-        document.getElementById("erroIncompleto").innerHTML = `<label class="form-label" style="color: red;">Preencha todos os campos</label>`
+        document.getElementById("erro").innerHTML += `<label class="form-label" style="color: red;">Preencha todos os campos</label>`;
     }
 }
 
+
+function verificaEmail(){
+    if(!document.getElementById("email").value.includes("@") || !document.getElementById("email").value.includes(".") || document.getElementById("email").value.length < 5)
+    document.getElementById("erro").innerHTML += `<label class="form-label" style="color: red;"> email incorreto</label>`;
+}
 
 
 
