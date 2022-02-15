@@ -81,7 +81,7 @@ function div(select){
                               <div class="logo col-sm-3">
                                 <div class="img">
                                   <center><button type="button" class="btn btn-sm btn-outline-success mb-2">Manifestar interese</button></center>
-                                  <img src="/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
+                                  <img src="http://localhost:3000/files/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
                                 </div>
                               </div>
             
@@ -116,7 +116,7 @@ function div(select){
                               <div class="logo col-sm-3">
                                 <div class="img">
                                   <center><button type="button" class="btn btn-sm btn-outline-success mb-2">Manifestar interese</button></center>
-                                  <img src="/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
+                                  <img src="http://localhost:3000/files/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
                                 </div>
                               </div>
             
@@ -151,7 +151,7 @@ function div(select){
                               <div class="logo col-sm-3">
                                 <div class="img">
                                   <center><button type="button" class="btn btn-sm btn-outline-success mb-2">Manifestar interese</button></center>
-                                  <img src="/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
+                                  <img src="http://localhost:3000/files/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
                                 </div>
                               </div>
             
@@ -186,7 +186,7 @@ function div(select){
                               <div class="logo col-sm-3">
                                 <div class="img">
                                   <center><button type="button" class="btn btn-sm btn-outline-success mb-2">Manifestar interese</button></center>
-                                  <img src="/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
+                                  <img src="http://localhost:3000/files/Assets/MUSAMI.jpg" class="img-fluid" alt="logo" style="width: 225px; height: 225px;">
                                 </div>
                               </div>
             

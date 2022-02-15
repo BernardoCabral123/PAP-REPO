@@ -43,6 +43,10 @@ router.get("/dados.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/dados.png"));
 })
 
+router.get("/MUSAMI.jpg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/MUSAMI.jpg"));
+})
+
 router.get("/profile.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/profile.svg"));
 })
@@ -61,6 +65,14 @@ router.get("/servidores.jpg",(req,res)=>{
 
 router.get("/principal.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/principal.png"));
+})
+
+router.get("/work.svg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/work.svg"));
+})
+
+router.get("/Estagio.svg",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/Estagio.svg"));
 })
 
 router.get("/principal.jpg",(req,res)=>{
