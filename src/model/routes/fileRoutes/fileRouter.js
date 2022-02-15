@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-const assetRouter = require("./fileRoutes/assetRouter");
+const assetRouter = require("./assetRouter");
 router.use("/assets",assetRouter);
 
-const controllerRouter = require("./fileRoutes/controllerRouter");
+const controllerRouter = require("./controllerRouter");
 router.use("/controllers",controllerRouter);
 
-const styleRouter = require("./fileRoutes/styleRouter");
+const styleRouter = require("./styleRouter");
 router.use("/styles",styleRouter);
 
 module.exports = router;

@@ -4,13 +4,11 @@ const express = require("express");
 const router = express.Router();
 
 
-const apiRouter = require("./apiRouter");
-router.use("/api",apiRouter);
+router.use("/api",require("./apiRoutes/apiRouter"));
 
-const fileRouter = require("./fileRouter");
-router.use("/files",fileRouter);
+router.use("/files",require("./fileRoutes/fileRouter"));
 
-router.use("/content", require("./contentRouter"));
+router.use("/content", require("./contentRoutes/contentRouter"));
 
 //todos
 router.get("/",(req,res)=>{

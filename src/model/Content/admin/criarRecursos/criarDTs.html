@@ -29,103 +29,92 @@
                         <img class="img-fluid" src="http://localhost:3000/files/Assets/diretorTurma.svg" alt="aluno">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-6 mt-4">
                         <form>
-                                <div class="col-sm-12 mt-1">
-                                    <label for="pNome" class="form-label">Primeiro nome</label>
-                                    <input type="text" class="form-control" id="pNome" style="border-radius: 15px;">
-                                </div>
-                        
-                                <div class="col-sm-12 mt-1">
-                                    <label for="pUltimo" class="form-label">Ultimo nome</label>
-                                    <input type="text" class="form-control" id="pUltio" style="border-radius: 15px;">
-                                </div>
-                        
-                                <div class="col-sm-12 mt-1">
-                                    <label for="email" class="form-label">Email</label>
+                                <div class="col-sm-12">
+                                    <label for="email" class="form-label"><strong>Email</strong></label>
                                     <input type="text" class="form-control" id="email" style="border-radius: 15px;">
                                 </div>
 
                                 <div class="col-sm-12 mt-2">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></th>
-                                                <th scope="col">Turma</th>
-                                                <th scope="col">Curso</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-                                                <td>Tis T1</td>
-                                                <td>Tecnico de informatica - Sistemas</td>
-                                            </tr>
-                                    
-                                            <tr>
-                                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-                                                <td>Tis T1</td>
-                                                <td>Tecnico de informatica - Sistemas</td>
-                                            </tr>
-                                        </tbody>
+                                    <div class="table-responsive-sm">
+                                        <table class="table text-center align-middle">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">Turma</th>
+                                                    <th scope="col">Ano </th>
+                                                    <th scope="col">Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+                                                    <td>Tis T1</td>
+                                                    <td>3º</td>
+                                                    <td>Tecnico de informatica - Sistemas</td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+                                                    <td>Tis T1</td>
+                                                    <td>3º</td>
+                                                    <td>Tecnico de informatica - Sistemas</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
+                                    </div>
                                 </div>
 
                                 <div class="col mt-4">
-                                    <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Adicionar diretor</button></center>
+                                    <center><button type="submit" class="col-sm-5 btn btn-primary" style="border-radius: 30px;">Adicionar</button></center>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
 
-                <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-                    <div class="table-responsive-sm">
-                        <table class="table">
+                <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded col-sm-8" >
+                    <div class="table-responsive-sm mx-auto">
+                        <table class="table text-center align-middle">
                             <thead>
-                            <tr>
-                                <th scope="col"><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></th>
-                                <th scope="col">Primeiro Nome</th>
-                                <th scope="col">Ultimo Nome</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Opções</th>
-                            </tr>
+                                <tr>
+                                    <th class="text-center" scope="col">Email</th>
+                                    <th class="text-center" scope="col">Ações</th>
+
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-                                <td>Mark</td>
-                                <td>Cota</td>
-                                <td>ruben.francico38@gmail.com</td>
-                                <td><button type="submit" class="btn btn-primary"><i class="fas fa-times"></i></button> <button type="submit" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
-                            </tr>
+                                <tr>
+                                    <td>ruben.francico38@gmail.com</td>
+                                    <td >
+                                        <button type="warning" class=" btn btn-primary">Editar</button>
+                                        <button type="warning" class=" btn btn-danger">Eliminar</button>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>bernardo.cabral@outlook.com</td>
+                                    <td >
+                                        <button type="warning" class=" btn btn-primary">Editar</button>
+                                        <button type="warning" class=" btn btn-danger">Eliminar</button>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>diogobranco38@gmail.com</td>
+                                    <td >
+                                        <button type="warning" class=" btn btn-primary">Editar</button>
+                                        <button type="warning" class=" btn btn-danger">Eliminar</button>
+                                    </td>
+                                </tr>
                     
-                            <tr>
-                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-                                <td>Mark</td>
-                                <td>Cota</td>
-                                <td>ruben.francico38@gmail.com</td>
-                                <td><button type="submit" class="btn btn-primary"><i class="fas fa-times"></i></button> <button type="submit" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
-                            </tr>
-                    
-                            <tr>
-                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-                                <td>Mark</td>
-                                <td>Cota</td>
-                                <td>ruben.francico38@gmail.com</td>
-                                <td><button type="submit" class="btn btn-primary"><i class="fas fa-times"></i></button> <button type="submit" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
-                            </tr>
-                    
-                            <tr>
-                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-                                <td>Mark</td>
-                                <td>Cota</td>
-                                <td>ruben.francico38@gmail.com</td>
-                                <td><button type="submit" class="btn btn-primary"><i class="fas fa-times"></i></button> <button type="submit" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
-                            </tr>
                             </tbody>
                         </table>
+                        <center><button type="submit" class="col-sm-4 btn btn-primary mt-1" style="border-radius: 30px;">Introduzir no sistema</button></center>
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>

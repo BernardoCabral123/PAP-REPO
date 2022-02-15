@@ -1,4 +1,4 @@
-const srcLocation = require("../../srcLocation");
+const srcLocation = require("../../../srcLocation");
 const path = require("path");
 const express = require("express");
 const router = express.Router();
@@ -14,10 +14,14 @@ router.get("/footer",(req,res)=>{
 })
 
 
-router.use("/admin", require("./contentRoutes/adminContentRouter"));
+router.use("/admin", require("./adminContentRouter"));
 
 router.get("/admin/criarAdmins",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/model/content/admin/criarAdmins.html"));
+})
+
+router.get("/admin/criarDTs",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/criarDTs.html"));
 })
 
 module.exports = router;
