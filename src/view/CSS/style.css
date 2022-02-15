@@ -25,6 +25,8 @@ body {
 .banner1{
     position: relative;
     z-index: 1000;
+    animation: bounceInDown;
+    animation-duration: 1.5s;
 }
 
 .top{
@@ -48,6 +50,16 @@ body {
 #background{
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 80% 100%);
     background-color: #3E8AFF;
+}
+
+.estagios{
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+
+.estagio p{
+    text-align: justify;
 }
 
 
