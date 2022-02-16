@@ -56,6 +56,6 @@ router.get("/gerir-recursos",(req,res)=>{
 
 //ADMIN
 router.get("/criar-recursos",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/view/HTML/gestao.html"));
+    res.sendFile(path.join(srcLocation,"/view/HTML/criarRecursos.html"));
 })
 module.exports = router;

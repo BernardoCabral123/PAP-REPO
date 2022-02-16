@@ -1,5 +1,3 @@
-
-
 function div(select){
   const tabelaAlunos = document.getElementById('categoria').innerHTML = 
   `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
