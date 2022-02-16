@@ -39,10 +39,10 @@ router.post(`/`,(req,res)=>{
                                 if (error) {
                                   console.log(error);
                                 } else {
-                                  console.log("New Directory created successfully !!");
+                                    res.send("Conta criada com sucesso");
                                 }
                               });
-                            res.send("deu certo");
+                            
                         }
                     })
                     
