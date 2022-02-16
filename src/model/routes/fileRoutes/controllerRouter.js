@@ -20,6 +20,10 @@ router.get("/criarRecursos.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/criarRecursos.js"));
 })
 
+router.get("/criarAdmins.js",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/controller/criarAdmins.js"));
+})
+
 router.get("/registoEmpresav2.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/registoEmpresav2.js"));
 })

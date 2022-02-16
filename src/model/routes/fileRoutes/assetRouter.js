@@ -35,6 +35,10 @@ router.get("/logoPlataforma.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/logoPlataforma.png"));
 })
 
+router.get("/logoPlataformaPrincipal.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/logoPlataformaPrincipal.png"));
+})
+
 router.get("/criarAluno.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/criarAluno.svg"));
 })

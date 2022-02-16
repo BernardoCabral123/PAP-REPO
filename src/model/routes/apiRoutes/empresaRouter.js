@@ -30,7 +30,7 @@ router.post(`/`,(req,res)=>{
                     res.send("Erro na introdução");
                 }
                 else{
-                    dbConnection.query("SELECT MAX(vistaempresa.idConta) AS max FROM vistaempresa;",(err,result)=>{
+                    dbConnection.query("SELECT MAX(vistaempresa.idConta) AS max FROM vistaEmpresa;",(err,result)=>{
                         if(err){
                             console.log(err);
                             res.send("Erro na criação da pasta");
