@@ -102,7 +102,7 @@ function cConta(){
                 })
         }
         
-        fetch('http://localhost:3000/empresas', options)
+        fetch('http://localhost:3000/api/empresas', options)
         .then(res => res.text())
         .then(text =>{
             alert(text)

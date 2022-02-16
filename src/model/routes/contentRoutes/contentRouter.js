@@ -16,12 +16,4 @@ router.get("/footer",(req,res)=>{
 
 router.use("/admin", require("./adminContentRouter"));
 
-router.get("/admin/criarAdmins",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/model/content/admin/criarAdmins.html"));
-})
-
-router.get("/admin/criarDTs",(req,res)=>{
-    res.sendFile(path.join(srcLocation,"/model/content/admin/criarDTs.html"));
-})
-
 module.exports = router;
