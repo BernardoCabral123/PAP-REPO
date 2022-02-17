@@ -48,6 +48,7 @@ async function adicionar(){
     if(existeConta == 1){
         document.getElementById("erro").innerHTML = `<label class="form-label" style="color: red;">Já existe uma conta com esse email no sistema</label>`;
     }
+    
     else{
         if(validaEmail() && !emails.includes(document.getElementById("email").value)){
             document.getElementById("lista").innerHTML += `
