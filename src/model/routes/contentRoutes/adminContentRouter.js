@@ -16,6 +16,13 @@ router.get("/criarAlunos",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/model/content/admin/criarRecursos/criarAlunos.html"));
 })
 
+router.get("/criarCursos",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/criarRecursos/criarCursos.html"));
+})
+
+router.get("/criarTurmas",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/criarRecursos/criarTurmas.html"));
+})
 
 //Gerir Recursos
 router.get("/gerirAdmins",(req,res)=>{

@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <div class="criarAluno shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <img class="img-fluid" src="http://localhost:3000/files/Assets/curso.svg" alt="aluno">
+            </div>
+
+            <div class="col-md-8">
+                <form>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 mt-1">
+                            <label for="pNome" class="form-label"><strong>Nome do curso</strong></label>
+                            <input type="text" class="form-control" id="pNome" >
+                        </div>
+                
+                        <div class="col-sm-6 mt-1">
+                            <label for="pUltimo" class="form-label"><strong>sigla</strong></label>
+                            <input type="text" class="form-control" id="pUltio" >
+                        </div>
+                
+                        <div class="col-sm-6 mt-1">
+                            <label for="turma" class="form-label"><strong>Area</strong></label>
+                            <select id="curso" class="form-select col-sm-12" aria-label="Default select example" >
+                                <option value="0" selected></option>
+                                <option value="sistemas">Técnico de informatica - Sistemas</option>
+                                <option value="redes">Técnico de informatica - Redes</option>
+                                <option value="multimedia">Técnico de informatica - Multimedia</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-6 mt-4">
+                            <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Adicionar</button></center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

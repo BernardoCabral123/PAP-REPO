@@ -1,168 +1,176 @@
-<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-
-  <div class="criar d-flex align-items-center">
-    <h5>Cursos</h5>
-    <button type="submit" class="btn btn-primary" style="border-radius: 30px;" onclick="criarTurmas();">Criar Turma</button>
-  </div>
-    <table class="table">
-      <thead>
-        <tr>
-        <th scope="col">Nome</th>
-        <th scope="col">Turma</th>
-        <th scope="col">Curso</th>
-        <th scope="col">Diretor de turma</th>
-        <th scope="col">Alunos</th>
-        <th scope="col">Alunos com estagio</th>         
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica sistemas-</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica sistemas-</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica - sistemas</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica - sistemas</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
-  </div></div>
-</div>
-  <div class="criar d-flex align-items-center">
-    <h5>Turmas</h5>
-    <button type="submit" class="btn btn-primary" style="border-radius: 30px;" onclick="criarTurmas();">Criar Turma</button>
-  </div>
-    <table class="table">
-      <thead>
-        <tr>
-        <th scope="col">Nome</th>
-        <th scope="col">Turma</th>
-        <th scope="col">Curso</th>
-        <th scope="col">Diretor de turma</th>
-        <th scope="col">Alunos</th>
-        <th scope="col">Alunos com estagio</th>         
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica sistemas-</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica sistemas-</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica - sistemas</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
-          <td>TIS T1</td>
-          <td>Tecnico de informatica - sistemas</td>
-          <td>Mark</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
-  </div></div>
-</div>
-<div id="criar">
-
-</div>
-<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
-    <div class="criar d-flex align-items-center">
-      <h5>Criar Alunos</h5>
-      <button type="submit" class="btn btn-primary" style="border-radius: 30px;" onclick="criarAlunos();">Adicionar</button>
-    </div>
-
+<div>
+  <div id="criarCursos"></div>
+  <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="criar d-flex align-items-center">
+        <h5>Cursos</h5>
+        <button type="submit" class="btn btn-primary" style="border-radius: 30px;" onclick="criarCursos();">Criar cursos</button>
+      </div>
+      
     <div class="table-responsive-sm">
       <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Primeiro Nome</th>
-            <th scope="col">Ultimo Nome</th>
+          <thead>
+            <tr>
+            <th scope="col">Nome</th>
             <th scope="col">Turma</th>
-            <th scope="col">Email</th>
-            <th scope="col">Estado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>TIS</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td><div id="circulo"></div></td>
-          </tr>
-  
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>TIS</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td><div id="circulo"></div></td>
-          </tr>
-  
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>TIS</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td><div id="circulo"></div></td>
-          </tr>
-  
-          <tr>
-            <td>Mark</td>
-            <td>Cota</td>
-            <td>TIS</td>
-            <td>ruben.francico38@gmail.com</td>
-            <td><div id="circulo"></div></td>
-          </tr>
-        </tbody>
+            <th scope="col">Curso</th>
+            <th scope="col">Diretor de turma</th>
+            <th scope="col">Alunos</th>
+            <th scope="col">Alunos com estagio</th>         
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica sistemas-</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica sistemas-</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica - sistemas</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica - sistemas</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+          </tbody>
       </table>
     </div>
+  </div>
+  
+  <div id="criarTurmas"></div>
+  <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="criar d-flex align-items-center">
+        <h5>Turmas</h5>
+        <button type="submit" class="btn btn-primary" style="border-radius: 30px;" onclick="criarTurmas();">Criar Turma</button>
+      </div>
+      <div class="table-responsive-sm">
+        <table class="table">
+          <thead>
+            <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Turma</th>
+            <th scope="col">Curso</th>
+            <th scope="col">Diretor de turma</th>
+            <th scope="col">Alunos</th>
+            <th scope="col">Alunos com estagio</th>         
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica sistemas-</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica sistemas-</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica - sistemas</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+              <td>TIS T1</td>
+              <td>Tecnico de informatica - sistemas</td>
+              <td>Mark</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  
+  <div id="criar"></div>
+
+  <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="criar d-flex align-items-center">
+        <h5>Criar Alunos</h5>
+        <button type="submit" class="btn btn-primary" style="border-radius: 30px;" onclick="criarAlunos();">Adicionar</button>
+      </div>
+
+      <div class="table-responsive-sm">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Primeiro Nome</th>
+              <th scope="col">Ultimo Nome</th>
+              <th scope="col">Turma</th>
+              <th scope="col">Email</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>TIS</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td><div id="circulo"></div></td>
+            </tr>
+    
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>TIS</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td><div id="circulo"></div></td>
+            </tr>
+    
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>TIS</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td><div id="circulo"></div></td>
+            </tr>
+    
+            <tr>
+              <td>Mark</td>
+              <td>Cota</td>
+              <td>TIS</td>
+              <td>ruben.francico38@gmail.com</td>
+              <td><div id="circulo"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
 </div>
