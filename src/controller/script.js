@@ -1,6 +1,10 @@
 function div(select){
   const tabelaAlunos = document.getElementById('categoria').innerHTML = 
-  `<div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+  `
+    <div class="container shadow-lg p-3 mb-5 bg-body rounded">
+    <div class = "Criar d-flex"> 
+        <h5>Criar Aluno</h5> <div id="btn"><button type="button" class="btn btn-primary" style="border-radius: 30px;" onclick="adicionar();">Criar</button></div>
+      </div>
     <table class="table">
       <thead>
         <tr>

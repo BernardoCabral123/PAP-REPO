@@ -36,6 +36,10 @@ router.get("/ofertas.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/ofertas.js"));
 })
 
+router.get("/gerirRecursos.js",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/controller/gerirRecursos.js"));
+})
+
 
 
 

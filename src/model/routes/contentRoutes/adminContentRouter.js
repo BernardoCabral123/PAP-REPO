@@ -34,4 +34,8 @@ router.get("/gerirEmpresas",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/model/content/admin/gerirRecursos/gerirEmpresas.html"));
 })
 
+router.get("/gerirTurmas",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/model/content/admin/gerirRecursos/gerirTurmas.html"));
+})
+
 module.exports = router;
