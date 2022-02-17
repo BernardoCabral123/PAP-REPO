@@ -119,7 +119,7 @@ function eliminar(x){
         document.getElementById("btnIntroduzir").style.display = "none";
 }
 
-function introduzir(){
+async function introduzir(){
     
     let emailobjs = [];
     for(let i = 0;i <emails.length; i++){
@@ -141,9 +141,19 @@ function introduzir(){
     .then(res => res.text())
     .then(text =>{
         alert(text)
+        document.getElementById('lista').innerHTML = '';
+        document.getElementById('btnIntroduzir').style.display = 'none';
     })
     .catch((err) =>{
         alert("Ocorreu um erro na efetuação dos registos");
         console.log(err);
     })
+
+    existeConta = await existe(email[emails.length-1]);
+    existeConta = Number.parseInt(existeConta);
+
+    if(existeConta == 1){
+        emails = [];
+    }
+
 }
