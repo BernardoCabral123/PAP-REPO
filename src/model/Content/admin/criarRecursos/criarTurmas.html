@@ -5,20 +5,28 @@
                 <img class="img-fluid" src="http://localhost:3000/files/Assets/turma.svg" alt="aluno">
             </div>
 
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-8 mx-auto mt-3">
                 <form class="">
-                    <div class="row align-items-middle">
-                        <div class="col-sm-6">
-                            <label for="pNome" class="form-label"><strong>Curso</strong></label>
-                            <input type="text" class="form-control" id="pNome" >
+                    <div class="row col-sm-12 mt-4">
+                        <div class="col-sm-6 mx-auto mt-1">
+                            <label class="form-label"><strong>Curso pertencente</strong></label>
+                            <select id="curso" class="form-select col-sm-12" aria-label="Default select example" >
+                                        <option value="0" selected></option>
+                                        <option value="sistemas">Técnico de informatica - Sistemas</option>
+                                        <option value="redes">Técnico de informatica - Redes</option>
+                                        <option value="multimedia">Técnico de informatica - Multimedia</option>
+                                    </select>
                         </div>
-
-                        <div class="col-sm-6">
-                            <button type="submit" class="btn btn-primary" style="border-radius: 30px;">Adicionar</button>
-                        </div>
-                    </div>
+                        
+                        <div class="col-sm-12 mt-4">
+                        <center><button type="submit" class="btn btn-primary col-sm-4" style="border-radius: 30px;">Criar turma</button></center>
+                    </div>  
                 </form>
+                    </div> 
+                </form>
+                
             </div>
+            
         </div>
     </div>
 </div>

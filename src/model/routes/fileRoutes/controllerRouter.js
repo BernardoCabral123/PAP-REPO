@@ -40,6 +40,9 @@ router.get("/gerirRecursos.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/gerirRecursos.js"));
 })
 
+router.get("/recursos.js",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/controller/recursos.js"));
+})
 
 
 
