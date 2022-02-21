@@ -116,3 +116,8 @@ function cConta(){
         document.getElementById("erro").innerHTML = `<label class="form-label" style="color: red;">Preencha todos os campos devidamente</label>`;
     }
 }
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }

@@ -91,4 +91,8 @@ router.get("/turma.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/turma.svg"));
 })
 
+router.get("/CriarConta.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/CriarConta.png"));
+})
+
 module.exports = router;
