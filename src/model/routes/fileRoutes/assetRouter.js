@@ -104,4 +104,29 @@ router.get("/Empresa.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/Empresa.png"));
 })
 
+router.get("/numero-1.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/numero-1.png"));
+})
+
+router.get("/numero-2.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/numero-2.png"));
+})
+
+router.get("/numero-3.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/numero-3.png"));
+})
+
+router.get("/numero-1verde.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/numero-1verde.png"));
+})
+
+router.get("/numero-2verde.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/numero-2verde.png"));
+})
+
+router.get("/numero-3verde.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/numero-3verde.png"));
+})
+
+
 module.exports = router;
