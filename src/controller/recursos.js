@@ -80,11 +80,20 @@ function abrirCriarCurso(){
                                     <label for="turma" class="form-label"><strong>Area</strong></label>
                                     <select id="curso" class="form-select col-sm-12" aria-label="Default select example" >
                                         <option value="0" selected></option>
-                                        <option value="sistemas">Técnico de informatica - Sistemas</option>
-                                        <option value="redes">Técnico de informatica - Redes</option>
-                                        <option value="multimedia">Técnico de informatica - Multimedia</option>
+                                        <option value="">Informática</option>
+                                        <option value="redes">Industrias</option>
+                                        <option value="multimedia">Cozinha</option>
                                     </select>
                                 </div>
+                                <div class="col-sm-6 mt-1">
+                                <label for="turma" class="form-label"><strong>Duração</strong></label>
+                                <select id="curso" class="form-select col-sm-12" aria-label="Default select example" >
+                                    <option value="0" selected></option>
+                                    <option value="sistemas">1 ano</option>
+                                    <option value="redes">3 anos</option>
+                                </select>
+                            </div>
+                        </div>
 
                                 <div class="col-sm-12 mt-4">
                                 <center><button type="button" class="col-sm-3 btn btn-danger mx-1" style="border-radius: 30px;" onclick='document.getElementById("criacaoCurso").innerHTML = "";';>Fechar</button>
@@ -133,7 +142,15 @@ function abrirCriarTurma(){
                                         <option value=2>3º ano</option>
                                     </select>
                                 </div>
+                                <div class="col-sm-6 mt-1">
+                            <label for="turma" class="form-label"><strong>Diretor de turma</strong></label>
+                            <select id="curso" class="form-select col-sm-12" aria-label="Default select example" >
+                                <option value="0" selected></option>
+                                <option value="sistemas">Ana Pereira - anapereira@enta.pt</option>
+                                <option value="redes">Duarte Cota - duartecota@enta.pt</option>
+                            </select>
                                 </div>
+                                
                         
                         <div class="col-sm-12 mt-4">
                                 
