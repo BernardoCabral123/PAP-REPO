@@ -20,4 +20,8 @@ router.get("/ofertas.css",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/CSS/ofertas.css"));
 })
 
+router.get("/main.css",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/CSS/main.css"));
+})
+
 module.exports = router;

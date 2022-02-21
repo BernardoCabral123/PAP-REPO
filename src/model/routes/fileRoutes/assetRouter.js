@@ -95,4 +95,13 @@ router.get("/CriarConta.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/CriarConta.png"));
 })
 
+
+router.get("/procurar.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/procurar.png"));
+})
+
+router.get("/Empresa.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/Empresa.png"));
+})
+
 module.exports = router;
