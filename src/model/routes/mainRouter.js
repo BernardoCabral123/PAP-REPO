@@ -23,6 +23,10 @@ router.get("/perfil",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/HTML/perfil.html"));
 })
 
+router.get("/duvidas",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/HTML/duvidas.html"));
+})
+
 
 //Alunos
 router.get("/ofertas",(req,res)=>{

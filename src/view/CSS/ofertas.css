@@ -34,6 +34,8 @@
     border-radius: 265px;
 }
 
+
+
 @media (max-width: 720px) {
     .card{
         display: flex !important;
