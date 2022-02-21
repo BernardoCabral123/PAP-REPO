@@ -92,19 +92,12 @@ body {
     border-radius: 265px;
 }
 
-.card{
-
-}
-
 .card:hover{
     background-color: white;
     box-shadow: 0px 0px 10px 0px #3E8AFF;
     cursor: pointer;
     transform: scale(1.05);
 }
-
-
-
 
 
 section.cards {
