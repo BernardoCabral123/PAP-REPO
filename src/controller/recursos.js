@@ -51,6 +51,7 @@ function mostrarBotao(x,y){
 function esconderBotao(x){
     document.getElementById(x).style.display = "none";
 }
+
 function abrirCriarCurso(){
     document.getElementById("criacaoTurma").innerHTML = "";
     document.getElementById("criacaoAluno").innerHTML = "";
@@ -163,12 +164,7 @@ function abrirCriarTurma(){
             </div>
         </div>
     </div>
-</div>
-
-
-`;
-    
-
+</div>`;
     document.getElementById('criacaoTurma').scrollIntoView();
 }
 
@@ -177,7 +173,7 @@ function abrirCriarAluno(){
     document.getElementById("criacaoTurma").innerHTML = "";
 
     document.getElementById("criacaoAluno").innerHTML = `
-<div class="container mb-2">
+    <div class="container mb-2">
     <div class="criarAluno shadow-lg p-3 bg-body rounded">
         <div class="row">
             <div class="col-4 mx-auto">
@@ -223,7 +219,134 @@ function abrirCriarAluno(){
         </div>
     </div>
 </div>
-`;
+`
 
     document.getElementById('criacaoAluno').scrollIntoView();
 }
+
+function abrirCriarAdm(){
+    document.getElementById("criacaoDTS").innerHTML = "";
+    document.getElementById("criacaoAdm").innerHTML = `
+    <div class="container mt-5">
+    <div class="criarAluno shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <img class="img-fluid " src="http://localhost:3000/files/Assets/diretorTurma.svg" alt="aluno">
+            </div>
+
+            <div class="col-md-6 mt-4 mb-5">
+                <form>
+                    <div class="col-sm-12 mt-1">
+                        <div class="mt-1" style="display: flex; justify-content: space-between;">
+                            <label for="emailadd" class="form-label"><strong>Email</strong></label>
+                                <div style="display: inline-block; width: 100%; text-align: right;" id="erroEmail"></div>
+                        </div>
+                        
+                        <div id="emailHelp" class="form-text"><input type="email" class="form-control" id="email" aria-describedby="emailHelp" maxlength="255" onchange="validaEmail();" onclick="document.getElementById('erro').innerHTML = '';"></div>
+                    </div>
+
+                    <div class="col mt-4">
+                        <center><div id="btn"><button type="button" class="col-sm-5 btn btn-primary" style="border-radius: 30px;" onclick="adicionar();">Adicionar</button></div></center>
+                        <center><div id="erro" class="mt-4"></div></center>
+                    </div>
+                            
+                    <div class="table-responsive-md mx-auto mt-3">
+                        <table class="table text-center align-middle mt-2" id="tabela">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" scope="col">Email</th>
+                                    <th class="text-center" scope="col">Ações</th>
+
+                                </tr>
+                            </thead >
+
+                            <tbody id="lista">
+                            </tbody>
+                        </table>
+                        <center><button type="button" class="col-sm-5 btn btn-primary mt-1" style="border-radius: 30px; display: none;" onclick="introduzir();" id="btnIntroduzir">Introduzir no sistema</button></center>
+                    </div>
+                </form>
+            </div>
+        </div>     
+    </div>
+</div>`
+
+    document.getElementById('criacaoAdm').scrollIntoView();
+}
+
+function abrirCriarDTS(){
+    document.getElementById('criacaoAdm').innerHTML = "";
+    document.getElementById("criacaoDTS").innerHTML = `
+    <div class="container mt-5">
+        <div class="criarAluno shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="row">
+                <div class="col-6">
+                    <img class="img-fluid" src="http://localhost:3000/files/Assets/diretorTurma.svg" alt="aluno">
+                </div>
+
+                <div class="col-6 mt-4">
+                    <form>
+                            <div class="col-sm-12">
+                                <label for="email" class="form-label"><strong>Email</strong></label>
+                                <input type="text" class="form-control" id="email" style="border-radius: 15px;">
+                            </div>
+
+                            <div class="col-sm-12 mt-2">
+                                <div class="table-responsive-sm">
+                                    <table class="table text-center align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Turma</th>
+                                                <th scope="col">Ano </th>
+                                                <th scope="col">Curso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+                                                <td>Tis T1</td>
+                                                <td>3º</td>
+                                                <td>Tecnico de informatica - Sistemas</td>
+                                            </tr>
+                                    
+                                            <tr>
+                                                <td><div><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label=""></div></td>
+                                                <td>Tis T1</td>
+                                                <td>3º</td>
+                                                <td>Tecnico de informatica - Sistemas</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col mt-4">
+                                <center><button type="submit" class="col-sm-5 btn btn-primary" style="border-radius: 30px;">Adicionar</button></center>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container mt-3 shadow-lg p-3 mb-5 bg-body rounded col-sm-12" >
+                <div class="table-responsive-sm mx-auto col-sm-6">
+                    <table class="table text-center align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Email</th>
+                                <th scope="col">Ações</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>                   
+                        </tbody>
+                    </table>
+                    <center><button type="submit" class="col-sm-5 btn btn-primary mt-1" style="border-radius: 30px;">Introduzir no sistema</button></center>
+                </div>
+            </div>
+        </div>
+    </div>`
+    document.getElementById('criacaoDTS').scrollIntoView();
+}
+
