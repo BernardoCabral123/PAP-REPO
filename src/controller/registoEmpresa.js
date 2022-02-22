@@ -81,6 +81,20 @@ function cConta(){
     })
 }
 
+function aceitarTermos(){
+    let cb = document.getElementById('termosUso')
+    let btn = document.getElementById('aceitarbtn')
+
+    console.log(cb.checked)
+
+    btn.addEventListener("click", function(){
+        if(btn.click){
+            cb.checked = true;
+        }
+    });
+
+}
+
 
 /*
 

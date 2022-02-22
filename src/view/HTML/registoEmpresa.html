@@ -22,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Registo</title>
     </head>
-    <body onload="renderNavFoot(); fillIlhas(); validacao();">
+    <body onload="renderNavFoot(); fillIlhas(); validacao(); aceitarTermos()">
         <div id="navbar"></div>
 
         <div class="container mt-5">
@@ -55,7 +55,7 @@
 
                                 <div class="col-sm-12 mt-1">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" maxlength="500" required>
+                                    <input type="password" class="form-control" id="password" maxlength="500" pattern=".{9,}" required>
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
@@ -66,7 +66,7 @@
                                 <div class="col-sm-6 mt-1">
                                     <label for="ilha" class="form-label">Ilha</label>
                                     <select class="form-select" aria-label="Default select example" id="ilha" onchange="getConcelhos();" required>
-                                        <option value="0" selected></option>
+                                        <option selected></option>
                                     </select>
                                 </div>
                     
@@ -89,8 +89,28 @@
                                 
                                 <div class="form-check col-sm-12 mt-3" style="margin-left: 12px;">
                                     <input class="form-check-input" type="checkbox" id="termosUso" required>
-                                    <label class="form-check-label" for="termosUso">Aceitar os termos de uso do sistema</label>
-                                  </div>
+                                    <label class="form-check-label" for="termosUso"></label>
+                                    <span id="termos" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">Termos de uso do sistema</span>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Termos para a utilização do sistema</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            Termos do sistema
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                            <button id="aceitarbtn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceitar</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="col-sm-12 justify-content-center mt-4">
                                     <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Criar conta</button></center>
