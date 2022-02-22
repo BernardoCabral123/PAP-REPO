@@ -3,6 +3,7 @@ const path = require("path");
 const express = require("express");
 const router = express.Router();
 
+
 router.get("/logoEnta.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/logoEnta.png"));
 })
@@ -94,7 +95,6 @@ router.get("/turma.svg",(req,res)=>{
 router.get("/CriarConta.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/CriarConta.png"));
 })
-
 
 router.get("/procurar.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/procurar.png"));
