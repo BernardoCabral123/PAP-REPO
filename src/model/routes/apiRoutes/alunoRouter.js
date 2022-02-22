@@ -6,9 +6,6 @@ var bodyParser = require('body-parser')
 
 const dbConnection = require("../../dbConnection");
 
-router.use(bodyParser.urlencoded({ extended: false }))
-router.use(bodyParser.json())
-
 router.get(`/`,(req,res)=>{
     dbConnection.query("SELECT * FROM Alunos;",(err,result)=>{
         if(err){

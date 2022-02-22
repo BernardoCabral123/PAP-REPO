@@ -1,3 +1,19 @@
+function abrirDropbox(){
+    let cb = document.getElementById('checkLocalizacao')
+    let selectIlha = document.getElementById('ilha')
+    let selectConcelho = document.getElementById('concelho')
+    console.log(cb.checked)
+    
+    if(cb.checked == true){
+        selectIlha.style.display = "none";
+        selectConcelho.style.display = "none";
+    }else{
+        selectIlha.style.display = "block";
+        selectConcelho.style.display = "block";
+    }
+}
+
+
 function criarAnuncio(){
     //obeter valores do formulario
     let curso = document.getElementById('curso').value
@@ -39,3 +55,4 @@ function criarAnuncio(){
         alert(err)
     })
 }
+

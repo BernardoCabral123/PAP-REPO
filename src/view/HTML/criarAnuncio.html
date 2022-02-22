@@ -22,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Criar Anuncios</title>
     </head>
-    <body onload="renderNavFoot();">
+    <body onload="renderNavFoot(); abrirDropbox();">
         <div id="navbar"></div>
         
 
@@ -55,10 +55,15 @@
                                     <label for="vagas" class="form-label">Numero de vagas</label>
                                     <input type="text" class="form-control" id="vagas" style="border-radius: 15px;">
                                 </div>
+
+                                <div class="form-check mt-1" style="margin-left: 12px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkLocalizacao" onclick="abrirDropbox();">
+                                    <label class="form-check-label" for="checkLocalizacao">Deseja utilizar a localização da sede?</label>
+                                </div>
                     
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-1" id="ilha">
                                     <label for="ilha" class="form-label">Ilha</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" id="ilha">
                                         <option selected></option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -66,9 +71,9 @@
                                     </select>
                                 </div>
                     
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-1" id="concelho">
                                     <label for="ilha" class="form-label">Concelho</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" id="concelho">
                                         <option selected></option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -80,8 +85,6 @@
                                     <input class="form-check-input" type="checkbox" id="termosUso">
                                     <label class="form-check-label" for="termosUso">Escolher os estagiários selecionados</label>
                                   </div>
-                                    
-                                    
                                 </div>
                                 
                                 <center><div class="row mt-2">
