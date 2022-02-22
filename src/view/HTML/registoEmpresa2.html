@@ -22,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Registo</title>
     </head>
-    <body onload="renderNavFoot(); fillIlhas(); validacao();">
+    <body onload="renderNavFoot(); validacao(); fillIlhas();">
         <div id="navbar"></div>
 
         <div class="container mt-5">
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="formulario col-sm-6 mt-5">
-                        <form id="registoEmpresario" class="needs-validation" novalidate>
+                        <form id="registoEmpresario needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-sm-12 mt-1">
                                     <label for="nomeempresa" class="form-label">Nome Empresa</label>
@@ -47,10 +47,12 @@
                                 </div>
             
                                 <div class="col-sm-12 mt-1">
-                                    <div class="mt-1">
-                                        <label for="emailadd" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" maxlength="255" required>
+                                    <div class="mt-1" style="display: flex; justify-content: space-between;">
+                                        <label for="emailadd" class="form-label">Email </label>
+                                            <div style="display: inline-block; width: 100%; text-align: right;" id="erroEmail"></div>
                                     </div>
+                                    
+                                    <div id="emailHelp" class="form-text"><input type="email" class="form-control" id="email" aria-describedby="emailHelp" maxlength="255" onchange="validaEmail();" required></div>
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
@@ -59,8 +61,11 @@
                                 </div>
 
                                 <div class="col-sm-12 mt-1">
-                                    <label for="contactoTelefonico" class="form-label">Contacto telefónico</label>
-                                    <input type="tel" class="form-control" id="contactoTelefonico" placeholder="+351" pattern=".{9,}" onKeyPress="if(this.value.length==9) return false;" placeholder="+351" onchange="validaContactoTelefonico()" required>
+                                    <div class="mt-1" style="display: flex; justify-content: space-between;">
+                                        <label for="emailadd" class="form-label" style="white-space: nowrap;">Contacto telefónico</label>
+                                            <div style="display: inline-block; width: 100%; text-align: right;" id="erroContactoTelefonico"></div>
+                                    </div>
+                                    <input type="number" class="form-control" id="contactoTelefonico" onKeyPress="if(this.value.length==9) return false;" placeholder="+351" onchange="validaContactoTelefonico()" required>
                                 </div>
                                 
                                 <div class="col-sm-6 mt-1">
@@ -94,6 +99,7 @@
 
                                 <div class="col-sm-12 justify-content-center mt-4">
                                     <center><button type="submit" class="col-sm-6 btn btn-primary" style="border-radius: 30px;">Criar conta</button></center>
+                                    <center><div id="erro" class="mt-4"></div></center>
                                 </div>
                             </div>
                         </form>

@@ -7,6 +7,7 @@
         <!-- Meu -->
         <link rel="stylesheet" href="http://localhost:3000/files/styles/login.css">
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
+        <script src="http://localhost:3000/files/controllers/login.js"></script>
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
         <!-- botstrap -->
@@ -21,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Login</title>
     </head>
-    <body onload="renderNavFoot();">
+    <body onload="renderNavFoot(); validacao();">
         <div id="navbar"></div>
         
         <div id="formulario" class="container mt-5 shadow-lg p-3 mb-5 bg-body rounded">
@@ -31,15 +32,15 @@
             </div>
             
             <div class="container">
-                <form>
+                <form class="needs-validation" novalidate>
                     <center><div class="row" style="max-width: 460px; text-align: start;">
                         <div class="col-sm-12 mb-3">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="email" name="email" style="border-radius: 20px;">
+                            <input type="email" class="form-control" id="email" placeholder="email" name="email" style="border-radius: 20px;" required>
                         </div>
                         <div class="col-sm-12 mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="border-radius: 20px;">
+                            <input type="password" class="form-control" id="password" placeholder="Password" style="border-radius: 20px;" required>
                         </div>
                         <center><button style="border-radius: 20px; width: 150px; height: auto;" type="submit" class="btn btn-primary">Login</button></center>
                     </div></center>

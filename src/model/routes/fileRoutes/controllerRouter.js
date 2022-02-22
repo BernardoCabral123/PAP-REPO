@@ -44,6 +44,9 @@ router.get("/recursos.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/recursos.js"));
 })
 
+router.get("/login.js",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/controller/login.js"));
+})
 
 
 module.exports = router;

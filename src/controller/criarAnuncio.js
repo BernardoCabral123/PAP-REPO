@@ -1,43 +1,35 @@
-function abrirDropbox(){
-    let cb = document.getElementById('checkLocalizacao')
-    let selectIlha = document.getElementById('ilha')
-    let selectConcelho = document.getElementById('concelho')
-    console.log(cb.checked)
-    
-    if(cb.checked == true){
-        selectIlha.style.display = "none";
-        selectConcelho.style.display = "none";
-    }else{
-        selectIlha.style.display = "block";
-        selectConcelho.style.display = "block";
-    }
+function validacao() {  
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          else{
+            cAnuncio()
+          }
+          form.classList.add('was-validated')
+        },false)
+    })
 }
 
-
-function criarAnuncio(){
-    //obeter valores do formulario
-    let curso = document.getElementById('curso').value
-    let area = document.getElementById('area').value
-    let descricao = document.getElementById('descricao').value
-    let vagas = document.getElementById('vagas').value
-    //let ilha = document.getElementById('ilha').value
-    //let conselho = document.getElementById('conselho').value
-    //bollean true false let tipo = document.getElementById('ib').value
-    console.log(curso,area,descricao,vagas)
-    //criar um objeto com os valores
-    let objeto = {
-        curso: curso,
-        area: area,
-        descricao: descricao,
-        qtdVagas: vagas,
-        //telemovel: ilha,
-        //email: conselho,
+function cAnuncio(){
+    const objeto = {
+        area: document.getElementById('area').value,
+        descricao: document.getElementById('descricao').value,
+        vagas: document.getElementById('vagas').value,
+        ilha: document.getElementById('ilha').value,
+        concelho: document.getElementById('concelho').value
     }
 
-    //trasnformar o objeto em jason
-    let objetoJSON = JSON.stringify(objeto)
-    console.log(objetoJSON)
+    //trasnformar o objeto em json
+    const objetoJSON = JSON.stringify(objeto)
     
+    console.log(objetoJSON)
+    alert(objetoJSON)
+
     const options = {
         method: 'POST',
         headers: {
@@ -54,24 +46,5 @@ function criarAnuncio(){
     .catch((err) =>{
         alert(err)
     })
-}
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-function validacao() {  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
 }
 

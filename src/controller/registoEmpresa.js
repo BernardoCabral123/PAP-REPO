@@ -1,3 +1,23 @@
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+function validacao() {  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          else{
+            cConta();
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+}
+
 async function fillIlhas(){
     await fetch('http://localhost:3000/api/localizacao/ilhas')
     .then(res => res.json())
@@ -31,6 +51,38 @@ async function getConcelhos(){
         document.getElementById('concelho').disabled = true;
     }
 }
+
+
+function cConta(){
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify({
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            contactoTelefonico: document.getElementById("contactoTelefonico").value,
+            nome: document.getElementById("nome").value,
+            idConcelho: document.getElementById("concelho").value,
+            rua: document.getElementById("rua").value,
+            numero: document.getElementById("numero").value
+        })
+    }
+
+    fetch('http://localhost:3000/api/empresas', options)
+    .then(res => res.text())
+    .then(text =>{
+        alert(text)
+    })
+    .catch((err) =>{
+        alert("Ocorreu um erro na efetuação do seu registo");
+        alert(err);
+    })
+}
+
+
+/*
 
 function validaEmail() 
 {
@@ -79,6 +131,8 @@ function validaRegisto(){
         return false;
 }
 
+
+
 function cConta(){
     
     document.getElementById("erro").innerHTML = ``;
@@ -120,4 +174,5 @@ function cConta(){
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
- }
+}
+*/

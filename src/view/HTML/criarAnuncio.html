@@ -22,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Criar Anuncios</title>
     </head>
-    <body onload="renderNavFoot(); abrirDropbox(); validacao();">
+    <body onload="renderNavFoot(); validacao();">
         <div id="navbar"></div>
         
 
@@ -33,47 +33,30 @@
                         <img class="img-fluid" src="http://localhost:3000/files/Assets/criarAnuncio.svg" alt="work">
                     </div>
 
-                    <div class="formulario col-sm-6">
+                    <div class="formulario col-sm-6 align-self-center">
                         <form class="needs-validation" novalidate>
                             <div class="row">
-                                <div class="col-sm-12 mt-1">
-                                    <label for="curso" class="form-label">Curso</label>
-                                    <input type="text" class="form-control" id="curso" style="border-radius: 15px;" required>
-                                    <div class="invalid-feedback">
-                                        Insira um curso
-                                    </div>
-                                </div>
-            
-                                <div class="col-sm-12 mt-1">
-                                    <label for="area" class="form-label">Area de intervenção</label>
-                                    <input type="text" class="form-control" id="area" aria-describedby="area" style="border-radius: 15px;" required>
-                                    <div class="invalid-feedback">
-                                        Insira uma area
-                                    </div>
+                                <div class="col-sm-12 mt-2">
+                                    <label for="area" class="form-label">Area</label>
+                                    <select class="form-select" aria-label="Default select example" id="area" required>
+                                        <option selected></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
 
-                                <div class="col-sm-12 mt-1">
+                                <div class="col-sm-12 mt-2">
                                     <label for="descricao" class="form-label">Descrição do trabalho dos formandos</label>
                                     <textarea class="form-control" id="descricao" style="border-radius: 15px;" rows="3" required></textarea>
-                                    <div class="invalid-feedback">
-                                        insira descrição do trabalho
-                                    </div>
                                 </div>
                     
-                                <div class="col-sm-12 mt-1">
+                                <div class="col-sm-12 mt-2">
                                     <label for="vagas" class="form-label">Numero de vagas</label>
                                     <input type="text" class="form-control" id="vagas" style="border-radius: 15px;" required>
-                                    <div class="invalid-feedback">
-                                        coloque quantidade de vagas
-                                    </div>
-                                </div>
-
-                                <div class="form-check mt-1" style="margin-left: 12px;">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkLocalizacao" onclick="abrirDropbox();">
-                                    <label class="form-check-label" for="checkLocalizacao">Deseja utilizar a localização da sede?</label>
                                 </div>
                     
-                                <div class="col-sm-6 mt-1" id="ilha">
+                                <div class="col-sm-6 mt-2">
                                     <label for="ilha" class="form-label">Ilha</label>
                                     <select class="form-select" aria-label="Default select example" id="ilha" required>
                                         <option selected></option>
@@ -81,12 +64,9 @@
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <div class="invalid-feedback">
-                                        escolha uma ilha
-                                    </div>
                                 </div>
                     
-                                <div class="col-sm-6 mt-1" id="concelho">
+                                <div class="col-sm-6 mt-2">
                                     <label for="ilha" class="form-label">Concelho</label>
                                     <select class="form-select" aria-label="Default select example" id="concelho" required>
                                         <option selected></option>
@@ -94,22 +74,16 @@
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <div class="invalid-feedback">
-                                        escolha um concelho
-                                    </div>
                                 </div>                                
                                 
                                 <div class="form-check col-sm-12 mt-3" style="margin-left: 12px;">
                                     <input class="form-check-input" type="checkbox" id="termosUso" required>
                                     <label class="form-check-label" for="termosUso">Escolher os estagiários selecionados</label>
-                                    <div class="invalid-feedback">
-                                        Deve aceitar os termos para poder criar a conta
-                                    </div>
                                 </div>
                                 
                                 <center>
-                                    <div class="col-sm-12 mt-2">
-                                        <button type="submit" class="btn btn-primary" style="border-radius: 30px;">Criar anuncio</button>
+                                    <div class="col-sm-12 mt-3">
+                                        <button type="submit" class="btn btn-primary col-sm-6" style="border-radius: 30px;">Criar anuncio</button>
                                     </div>
                                 </center>
                             </div>
