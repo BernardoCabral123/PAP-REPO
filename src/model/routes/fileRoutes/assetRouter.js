@@ -57,6 +57,17 @@ router.get("/CriarConta.png",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/CriarConta.png"));
 })
 
+router.get("/serAceito.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/serAceito.png"));
+})
+
+router.get("/empresa.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/empresa.png"));
+})
+
+router.get("/pasta.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/pasta.png"));
+})
 //logos
 
 router.get("/logoEnta.png",(req,res)=>{
