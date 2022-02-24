@@ -24,4 +24,8 @@ router.get("/main.css",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/CSS/main.css"));
 })
 
+router.get("/minhaArea.css",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/CSS/minhaArea.css"));
+})
+
 module.exports = router;
