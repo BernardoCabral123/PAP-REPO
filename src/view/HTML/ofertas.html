@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="http://localhost:3000/files/styles/ofertas.css">
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
+        <script src="http://localhost:3000/files/controllers/ofertas.js"></script>
+        <script src="http://localhost:3000/files/controllers/registoEmpresa.js"></script>
         <!-- font -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
         <!-- botstrap -->
@@ -20,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Ofertas de estágio</title>
     </head>
-    <body onload="renderNavFoot();">
+    <body onload="renderNavFoot(); fillIlhas();">
         <div id="navbar"></div>
 
         <div class="container mt-5" style="background-color: #3898ec;">
@@ -49,20 +51,14 @@
                                 </div>
             
                                 <div class="col-sm-4">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Concelho</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-select" aria-label="Default select example" id="ilha" onchange="getConcelhos();">
+                                        <option selected></option>
                                     </select>
                                 </div>
             
                                 <div class="col-sm-4">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Ilha</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-select" aria-label="Default select example" id="concelho" disabled>
+                                        <option selected></option>
                                     </select>
                                 </div>
                             </div>

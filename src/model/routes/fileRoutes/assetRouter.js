@@ -132,4 +132,8 @@ router.get("/duvidas.svg",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/Assets/duvidas.svg"));
 })
 
+router.get("/parceria.png",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/Assets/parceria.png"));
+})
+
 module.exports = router;
