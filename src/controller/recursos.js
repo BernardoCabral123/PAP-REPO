@@ -45,7 +45,6 @@ function selecionar(){
 function mostrarBotao(x,y){    
     if(document.getElementById(y).innerHTML === "")
     document.getElementById(x).style.display = 'block';
-
 }
 
 function esconderBotao(x){
