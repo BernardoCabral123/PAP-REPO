@@ -12,6 +12,10 @@ router.get("/script.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/script.js"));
 })
 
+router.get("/minhaArea.js",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/controller/minhaArea.js"));
+})
+
 router.get("/registoEmpresa.js",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/controller/registoEmpresa.js"));
 })

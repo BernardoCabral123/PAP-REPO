@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="http://localhost:3000/files/styles/ofertas.css">
         <link rel="stylesheet" href="http://localhost:3000/files/styles/minhaArea.css">
         <script src="http://localhost:3000/files/controllers/registoEmpresa.js"></script>
+        <script src="http://localhost:3000/files/controllers/minhaArea.js"></script>
         <script src="http://localhost:3000/files/controllers/navFoot.js"></script>
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
@@ -21,18 +22,19 @@
         <!-- letras -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <title>HOME</title>
+        <link rel="shortcut icon" href="http://localhost:3000/files/Assets/logoPlataforma.png">
+        <title>Minha Area</title>
     </head>
     <body onload="renderNavFoot();">
         <div id="navbar"></div>
         
         <div class="container mt-5 d-flex">
-            <h2>Meus anuncios</h2>
+            <h2>Minhas ofertas</h2>
             <button type="button" class="btn btn-primary mx-3 rounded" onclick="window.location='http://localhost:3000/minha-area/criar-anuncio'">Criar Anuncio</button>
         </div>
 
         <div class="container">
-            <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card mt-5 shadow-lg p-3 mb-5 bg-body rounded">
                 <div class="row">
                     <div class="logo col-sm-3">
                         <div class="img">
@@ -40,37 +42,40 @@
                         </div>
                     </div>
 
-                    <div class="conteudo col-sm-9">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h5>Curso</h5>
-                                <p>Técnico de informática - Sistemas</p>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <h5>Área de integração</h5>
-                                <p>Gestão de redes</p>                            
-                            </div>
-
-                            <div class="col-sm-6 mt-5">
-                                <h5 class="card-title">Descrição do trabalho</h5>
-                                <p class="card-text">Gestão de redes e equipamento informático da empresa</p>                           
-                            </div>
-
-                            <div class="col-sm-6 mt-5">
-                                <h5>Localização</h5>
-                                <p>São pedro, Ponta Delgada, São Miguel</p>
-                            </div>
+                    <div class="col-sm-4 mt-2">
+                        <div class="col">
+                            <h5>MUSAMI</h5>
                         </div>
+
+                        <div class="col mt-4">
+                            <h5>Area</h5>
+                            <p>Técnico de informática - Sistemas</p>
+                        </div>
+
+                        <div class="col mt-5">
+                            <h5>Localização</h5>
+                            <p>São pedro, Ponta Delgada, São Miguel</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 mt-2">
+                        <div class="col">
+                            <h5 class="card-title">Descrição do trabalho</h5>
+                            <p class="card-text">Gestão de redes e equipamento informático da empresa</p> 
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1" style="display: none;">
+
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <h2>Anuncios finalizados</h2>
+            <h2>Ofertas terminadas</h2>
             
-            <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card mt-5 shadow-lg p-3 mb-5 bg-body rounded">
                 <div class="row">
                     <div class="logo col-sm-3">
                         <div class="img">
@@ -78,28 +83,31 @@
                         </div>
                     </div>
 
-                    <div class="conteudo col-sm-9 mt-4">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h5>Curso</h5>
-                                <p>Técnico de informática - Sistemas</p>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <h5>Área de integração</h5>
-                                <p>Gestão de redes</p>                            
-                            </div>
-
-                            <div class="col-sm-6 mt-5">
-                                <h5 class="card-title">Descrição do trabalho</h5>
-                                <p class="card-text">Gestão de redes e equipamento informático da empresa</p>                           
-                            </div>
-
-                            <div class="col-sm-6 mt-5">
-                                <h5>Localização</h5>
-                                <p>São pedro, Ponta Delgada, São Miguel</p>
-                            </div>
+                    <div class="col-sm-4 mt-2">
+                        <div class="col">
+                            <h5>MUSAMI</h5>
                         </div>
+
+                        <div class="col mt-4">
+                            <h5>Area</h5>
+                            <p>Técnico de informática - Sistemas</p>
+                        </div>
+
+                        <div class="col mt-5">
+                            <h5>Localização</h5>
+                            <p>São pedro, Ponta Delgada, São Miguel</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 mt-2">
+                        <div class="col">
+                            <h5 class="card-title">Descrição do trabalho</h5>
+                            <p class="card-text">Gestão de redes e equipamento informático da empresa</p> 
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1" style="display: none;">
+
                     </div>
                 </div>
             </div>
