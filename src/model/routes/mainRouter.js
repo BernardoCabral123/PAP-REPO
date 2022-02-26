@@ -58,6 +58,11 @@ router.get("/gerir-recursos",(req,res)=>{
 })
 
 
+router.get("/vistadiretor",(req,res)=>{
+    res.sendFile(path.join(srcLocation,"/view/HTML/vistadiretor.html"));
+})
+
+
 //ADMIN
 router.get("/criar-recursos",(req,res)=>{
     res.sendFile(path.join(srcLocation,"/view/HTML/criarRecursos.html"));

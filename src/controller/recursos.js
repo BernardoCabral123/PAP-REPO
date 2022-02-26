@@ -1,7 +1,6 @@
 function selecionar(){
     switch(document.getElementById("estado").value){
         case "alunos":
-        
             fetch("http://localhost:3000/content/admin/gerirAlunos")
             .then(res => res.text())
             .then(data => document.getElementById("painelGestao").innerHTML = data)
