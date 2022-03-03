@@ -23,14 +23,14 @@
         <link rel="shortcut icon" href="http://localhost:3000/files/Assets/logoPlataforma.png">
         <title>Dashboard</title>
     </head>
-    <body onload="renderNavFoot(); selecionar();">
+    <body onload="renderNavFoot(); selecionarDiretor();">
     <div id="navbar"></div>
 
     <div class="container mt-3 mb-4">
         <div class="row">
         <h2>Gerir recursos</h2>
         <div class="col-sm-2">
-            <select id="estado" class="form-select col-sm-6 mx-1 " onchange="selecionar();" aria-label="Default select example">
+            <select id="estado" class="form-select col-sm-6 mx-1 " onchange="selecionarDiretor();" aria-label="Default select example">
             <option selected value="alunos">Alunos</option>
             <option value="pedidos">Pedidos</option>
             </select>

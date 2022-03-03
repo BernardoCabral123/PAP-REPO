@@ -1,0 +1,46 @@
+<div class="container mb-4  shadow-lg p-3 bg-body rounded">
+  <div class="criar d-flex align-items-center">
+    <h3>Pedidos de aprovação</h3>
+  </div>
+  <div class="table-responsive-sm">
+    <table class="table text-center">
+      <thead>
+        <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Turma</th>
+        <th scope="col">Empresa</th>
+        <th scope="col">Anuncio</th>
+        <th scope="col">Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Diogo Branco</td>
+          <td>TIS</td>
+          <td>PMA</td>
+          <td>
+            <button class="btn btn-primary" style="border-radius: 15px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+              </svg>
+            </button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-success mx-1" style="border-radius: 15px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-danger" style="border-radius: 15px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+          </td>    
+        </tr>
+      </tbody>
+    </table>
+    <div class="text-center"><label class="text-danger" id="msgTurmas"></label></div>
+  </div>
+</div>

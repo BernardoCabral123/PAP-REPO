@@ -1,3 +1,29 @@
+function selecionarDiretor(){
+    switch(document.getElementById("estado").value){
+        case "alunos":
+            fetch("http://localhost:3000/content/admin/gerirAlunos")
+            .then(res => res.text())
+            .then(data => document.getElementById("painelGestao").innerHTML = data)
+            .catch((err)=>{
+                console.log(err);
+                alert("Ocorreu um erro a carregar a criação de admins");
+            });
+    
+        break;
+
+        case "pedidos":
+            fetch("http://localhost:3000/content/admin/pedidosAlunos")
+            .then(res => res.text())
+            .then(data => document.getElementById("painelGestao").innerHTML = data)
+            .catch((err)=>{
+                console.log(err);
+                alert("Ocorreu um erro a carregar a criação de admins");
+            });
+        break;
+    } 
+}
+/*
+
 function selecionar(){
     switch(document.getElementById("estado").value){
         case "alunos":
@@ -40,6 +66,8 @@ function selecionar(){
         break;
     } 
 }
+
+*/
 
 function mostrarBotao(x,y){    
     if(document.getElementById(y).innerHTML === "")

@@ -2,10 +2,10 @@
 function validacao() {  
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
-  
+    var btn = document.getElementById('btnCriar')
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms).forEach(function (form) {
-        form.addEventListener('submit', function (event) {
+        form.addEventListener('click', function (event) {
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
@@ -16,6 +16,17 @@ function validacao() {
           form.classList.add('was-validated')
         }, false)
       })
+}
+
+function aceitarTermos(){
+    let cb = document.getElementById('termosUso')
+    let btn = document.getElementById('aceitarbtn')
+
+    btn.addEventListener("click", function(){
+        if(btn.click){
+            cb.checked = true;
+        }
+    });
 }
 
 async function fillIlhas(){
@@ -92,7 +103,6 @@ function aceitarTermos(){
             cb.checked = true;
         }
     });
-
 }
 
 
