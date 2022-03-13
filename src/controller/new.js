@@ -211,6 +211,66 @@ function validaTermosUsos(idInput){
     }
 }
 
+//funçoes
+function validarCurso(caixaCurso, curso, caixaSigla, sigla, caixaArea, area, caixaDuracao, duracao){
+    if(validarNomeCurso(caixaCurso, curso)
+        && validaSigla(caixaSigla, sigla)
+        && validaArea(caixaArea, area)
+        && validaDuracao(caixaDuracao, duracao)){
+            return true;
+        }
+    else {
+        validarNomeCurso(caixaCurso, curso)
+        validaSigla(caixaSigla, sigla)
+        validaArea(caixaArea, area)
+        validaDuracao(caixaDuracao, duracao)
+        return false;
+    }                             
+}
+
+function validarNomeCurso(nomeCurso, idInput){
+    if(nomeCurso != null && nomeCurso != ""){
+        idInput.style.border = "solid green";
+        return true;
+    }
+    else{
+        idInput.style.border = "solid red"
+        return false;
+    }
+}
+
+function validaSigla(sigla, idInput){
+    if(sigla != null && sigla != ""){
+        idInput.style.border = "solid green";
+        return true;
+    }
+    else{
+        idInput.style.border = "solid red"
+        return false;
+    }
+}
+
+function validaArea(area, idInput){
+    if(area != null && area != "" && area != 0){
+        idInput.style.border = "solid green";
+        return true;
+    }
+    else{
+        idInput.style.border = "solid red"
+        return false;
+    }
+}
+
+function validaDuracao(duracao, idInput){
+    if(duracao != null && duracao != "" && duracao != 0){
+        idInput.style.border = "solid green";
+        return true;
+    }
+    else{
+        idInput.style.border = "solid red"
+        return false;
+    }
+}
 
 
 
