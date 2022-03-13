@@ -1,34 +1,6 @@
 function renderRegisto(){
     renderCode("content",`
     <div class="container mt-5">
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3898ec;">
-                <div class="container-fluid">
-                    <a class="navbar-brand">Filtragem</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <select class="form-select" aria-label="Default select example" id="ilha" onchange="getConcelhos();">
-                                        <option selected></option>
-                                    </select>
-                                </div>
-            
-                                <div class="col-sm-6">
-                                    <select class="form-select" aria-label="Default select example" id="concelho" disabled>
-                                        <option selected></option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="container mt-5">
             <div class="shadow-lg p-3 mb-5 bg-body rounded">
                 <div class="info">
                     <center><div class="mt-1">
@@ -53,8 +25,7 @@ function renderRegisto(){
         
                                 <div class="col-sm-12 mt-1">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" maxlength="15" onchange="validaPassword(this.value,this)">
-                                    <!--<div class="invalid-feedback"><p>no minimo 8 caracters</p></div>-->
+                                    <input type="password" class="form-control" id="password" maxlength="15" value="" onchange="validaPassword(this.value,this)">
                                 </div>
         
                                 <div class="col-sm-12 mt-1">
@@ -69,11 +40,11 @@ function renderRegisto(){
                                 </div>
                                 
                                 <div class="form-check col-sm-12 mt-3" style="margin-left: 12px;">
-                                    <input class="form-check-input" type="checkbox" id="termosUso">
+                                    <input class="form-check-input" type="checkbox" id="termosUso" onchange="validaTermosUsos(this)">
                                     <label class="form-check-label" for="termosUso">Aceitar</label>
                                     <a onclick='openModal("termos");' class="text-primary" style="cursor: pointer;"><strong>Termos de uso</strong></a>
                                     
-                                    <!-- <Modal> -->
+                                    
                                     <div class="modal fade" id="termos">
                                         <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
@@ -90,7 +61,7 @@ function renderRegisto(){
                                         </div>
                                         </div>
                                     </div>
-                                    <!-- </Modal> -->
+                                    
                                 </div>
         
                                 <div class="col-sm-12 justify-content-center mt-4">
@@ -106,7 +77,7 @@ function renderRegisto(){
 }
 
 async function registar(){
-    if(validaRegistoEmpresa()){
+    if(validaRegistoEmpresa(document.getElementById("email"),document.getElementById("email").value,document.getElementById("password"),document.getElementById("password").value,document.getElementById("nome"),document.getElementById("nome").value,document.getElementById("contactoTelefonico"),document.getElementById("contactoTelefonico").value,document.getElementById("termosUso"))){
         const options = {
             method: 'POST',
             headers: {
@@ -134,79 +105,63 @@ async function registar(){
     }
 }
 
-function validaPassword(password,idInput) {  
-    var validation = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    
-    if(validation.test(password)){
-        idInput.style.border='solid green'
-        return true
+function validaPassword(password,idInput) {
+    if(password != null && password != ""){
+        var validation = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        
+        if(validation.test(password)){
+            idInput.style.border='solid green'
+            return true
+        }
+        else{
+            idInput.style.border='solid red'
+            return false;
+        }
     }
     else{
-        idInput.style.border='solid red'
+        console.log("password")
+        idInput.style.border='solid red';
         return false;
     }
-
 }
 
+function validaRegistoEmpresa(caixaEmail,email,caixaPassword,password,caixaNome,nome,caixaContactoTelefonico,contactoTelefonico,caixaTermos){
+    if(validaEmail(email,caixaEmail) 
+        && validaPassword(password,caixaPassword) 
+        && validaNomeEmpresa(nome,caixaNome)
+        && validaContactoTelefonico(contactoTelefonico,caixaContactoTelefonico)
+        && validaTermosUsos(caixaTermos))
+        return true;
+    else{
+        validaEmail(email,caixaEmail)
+        validaPassword(password,caixaPassword)
+        validaNomeEmpresa(nome,caixaNome)
+        validaContactoTelefonico(contactoTelefonico,caixaContactoTelefonico)
+        validaTermosUsos(caixaTermos)
+        return false;
+    }
+}
 
-
-function validaRegistoEmpresa(){
-    if(validaEmail(document.getElementById('email'))
-    && document.getElementById("nome").value != "" && document.getElementById("nome").value != null
-    && validaPassword(document.getElementById("password").value)
-    && validaContactoTelefonico(document.getElementById('contactoTelefonico').value)
-    && document.getElementById("termosUso").checked == true){
+function validaLogin(){
+    if(validaEmail(document.getElementById('email')) && validaPassword(document.getElementById('password'))){
         return true;
     }
     else{
-
+        return false;
     }
-}
-
-function limparValidacao(){
-    let email = document.getElementById("email").value;
-    let pass = document.getElementById("password").value;
-    let contacto = document.getElementById("contactoTelefonico").value;
-    let none = document.getElementById("nome").value
-
-    var x = document.getElementById("");
-    
-    
-    /*
-    if(email != "" && email != null){
-        email.style.border="solid gren";
-    }
-
-    if(pass != "" && pass != null){
-        pass.style.border ="solid gren";
-    }
-
-    if(contacto != "" && contacto != null){
-        contacto.style.border="solid gren";
-    }
-
-    if(none != "" && none != null){
-        none.style.border="solid gren";
-    }
-
-    else{
-
-    }
-    */
 }
 
 function validaNomeEmpresa(nome,idInput){
     if(nome != null && nome != ""){
-        idInput.style.border = "solid green"
+        idInput.style.border = "solid green";
         return true;
     }
     else{
+        console.log('nome invalido')
         idInput.style.border = "solid red"
         return false;
     }
 }
-
-
 
 function validaEmail(email,idInput) {
     if(email != null && email != ""){
@@ -219,20 +174,41 @@ function validaEmail(email,idInput) {
             return false;
         }
     }else{
+        console.log("email invalido")
         idInput.style.border='solid red';
         return false;
     }
 }
 
 function validaContactoTelefonico(contactoTelefonico,idInput){
-    if(contactoTelefonico != null && contactoTelefonico != ""   ){
-        if (!isNaN(contactoTelefonico) && contactoTelefonico.length == 9){
-            idInput.style.border='solid green';
-            return true;
+    if(contactoTelefonico != null && contactoTelefonico != ""){
+        if(contactoTelefonico != null && contactoTelefonico != ""   ){
+            if (!isNaN(contactoTelefonico) && contactoTelefonico.length == 9){
+                idInput.style.border='solid green';
+                return true;
+            }
+            else{
+                idInput.style.border='solid red';
+                return false;
+            }
         }
-        else{
-            idInput.style.border='solid red';
-            return false;
-        }
+    }else{
+        idInput.style.border='solid red';
+        return false;
     }
 }
+
+function validaTermosUsos(idInput){
+    if(idInput.checked == true){
+        idInput.style.backgroundColor = "green"
+        idInput.style.border='solid green';
+        return true;
+    }else{
+        
+        idInput.style.backgroundColor = "white"
+        idInput.style.border='solid red';
+        return false;
+    }
+}
+
+
