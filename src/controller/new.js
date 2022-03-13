@@ -77,7 +77,7 @@ function renderRegisto(){
 }
 
 async function registar(){
-    if(validaRegistoEmpresa(document.getElementById("email"),document.getElementById("email").value,document.getElementById("password"),document.getElementById("password").value,document.getElementById("nome"),document.getElementById("nome").value,document.getElementById("contactoTelefonico"),document.getElementById("contactoTelefonico").value,document.getElementById("termosUso"))){
+    if(validaRegistoEmpresa(document.getElementById("email"),document.getElementById("email").value,document.getElementById("password"),document.getElementById("password").value,document.getElementById("nome"),document.getElementById("nome").value,document.getElementById("contactoTelefonico"),document.getElementById("contactoTelefonico").value, document.getElementById("termosUso"))){
         const options = {
             method: 'POST',
             headers: {
@@ -210,5 +210,7 @@ function validaTermosUsos(idInput){
         return false;
     }
 }
+
+
 
 
